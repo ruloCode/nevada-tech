@@ -29,11 +29,11 @@ export default function AboutCareers() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
         >
           {/* Label */}
           <div className="inline-flex items-center gap-2 mb-6 text-sm font-medium tracking-wide uppercase text-muted">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse-green" />
+            <span className="w-2 h-2 rounded-full bg-accent animate-ping-green" />
             Careers
           </div>
 

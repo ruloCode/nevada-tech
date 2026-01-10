@@ -2,14 +2,17 @@
 
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import SectionTitle from "../ui/SectionTitle";
 import PortfolioCard from "./PortfolioCard";
-import { projects } from "@/app/data/projects";
+import { Link } from "@/app/i18n/navigation";
+import { projects } from "@/app/data/projects-detail";
 
 export default function Portfolio() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const t = useTranslations("Portfolio");
 
   const checkScrollability = () => {
     if (containerRef.current) {
@@ -31,12 +34,12 @@ export default function Portfolio() {
   };
 
   return (
-    <section className="section-light-gray py-20 md:py-32 overflow-hidden">
+    <section id="projects" className="section-light-gray py-20 md:py-32 overflow-hidden">
       <div className="container-hero">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <SectionTitle
-            label="Our Works"
-            title="Check Our Featured Projects"
+            label={t("label")}
+            title={t("title")}
             centered={false}
             light={true}
           />
@@ -107,26 +110,27 @@ export default function Portfolio() {
       >
         {projects.map((project) => (
           <PortfolioCard
-            key={project.id}
+            key={project.slug}
             title={project.title}
             year={project.year}
-            tags={project.tags}
+            tags={project.services}
+            gradient={project.gradient}
             image={project.image}
             description={project.description}
+            href={`/projects/${project.category}/${project.slug}`}
           />
         ))}
       </div>
 
       {/* View all projects link */}
       <div className="container-hero mt-8">
-        <motion.a
-          href="#projects"
-          className="inline-flex items-center gap-2 text-section-light-fg font-medium hover:text-accent transition-colors duration-300"
-          whileHover={{ x: 5 }}
+        <Link
+          href="/projects"
+          className="inline-flex items-center gap-2 text-section-light-fg font-medium hover:text-accent transition-colors duration-300 group"
         >
-          All projects
+          {t("viewAll")}
           <svg
-            className="w-4 h-4"
+            className="w-4 h-4 transition-transform group-hover:translate-x-1"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -138,7 +142,7 @@ export default function Portfolio() {
               d="M17 8l4 4m0 0l-4 4m4-4H3"
             />
           </svg>
-        </motion.a>
+        </Link>
       </div>
     </section>
   );

@@ -1,10 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { expertiseStats } from "@/app/data/about";
+import { motion, type Variants } from "framer-motion";
+import { useTranslations } from "next-intl";
 import AnimatedCounter from "../ui/AnimatedCounter";
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -14,7 +14,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30, scale: 0.95 },
   visible: {
     opacity: 1,
@@ -22,12 +22,21 @@ const itemVariants = {
     scale: 1,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const as [number, number, number, number],
     },
   },
 };
 
+const expertiseStatsData = [
+  { id: "stat-1", value: 10, suffix: "+", labelKey: "yearsExcellence" },
+  { id: "stat-2", value: 50, suffix: "+", labelKey: "projectsDelivered" },
+  { id: "stat-3", value: 15, suffix: "+", labelKey: "industriesTransformed" },
+  { id: "stat-4", value: 100, suffix: "%", labelKey: "clientSatisfaction" },
+];
+
 export default function AboutExpertise() {
+  const t = useTranslations("About.expertise");
+
   return (
     <section className="section-light-gray py-20 md:py-32">
       <div className="container-hero">
@@ -37,11 +46,11 @@ export default function AboutExpertise() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const as [number, number, number, number] }}
         >
           <div className="inline-flex items-center gap-2 mb-4 text-sm font-medium tracking-wide uppercase text-section-light-muted">
             <span className="w-2 h-2 rounded-full bg-accent" />
-            Our Expertise
+            {t("title")}
           </div>
         </motion.div>
 
@@ -61,14 +70,14 @@ export default function AboutExpertise() {
             <div className="relative z-10">
               <div className="flex items-baseline gap-1 mb-4">
                 <span className="text-6xl md:text-8xl font-bold text-section-light-fg">
-                  <AnimatedCounter target={expertiseStats[0].value} />
+                  <AnimatedCounter target={expertiseStatsData[0].value} />
                 </span>
                 <span className="text-4xl md:text-5xl font-bold text-accent">
-                  {expertiseStats[0].suffix}
+                  {expertiseStatsData[0].suffix}
                 </span>
               </div>
               <p className="text-xl md:text-2xl text-section-light-muted font-medium">
-                {expertiseStats[0].label}
+                {t(`stats.${expertiseStatsData[0].labelKey}`)}
               </p>
             </div>
             {/* Decorative gradient */}
@@ -82,14 +91,14 @@ export default function AboutExpertise() {
           >
             <div className="flex items-baseline gap-1 mb-2">
               <span className="text-4xl md:text-5xl font-bold text-section-light-fg">
-                <AnimatedCounter target={expertiseStats[1].value} />
+                <AnimatedCounter target={expertiseStatsData[1].value} />
               </span>
               <span className="text-2xl font-bold text-accent">
-                {expertiseStats[1].suffix}
+                {expertiseStatsData[1].suffix}
               </span>
             </div>
             <p className="text-sm md:text-base text-section-light-muted">
-              {expertiseStats[1].label}
+              {t(`stats.${expertiseStatsData[1].labelKey}`)}
             </p>
           </motion.div>
 
@@ -100,14 +109,14 @@ export default function AboutExpertise() {
           >
             <div className="flex items-baseline gap-1 mb-2">
               <span className="text-4xl md:text-5xl font-bold text-section-light-fg">
-                <AnimatedCounter target={expertiseStats[2].value} />
+                <AnimatedCounter target={expertiseStatsData[2].value} />
               </span>
               <span className="text-2xl font-bold text-accent">
-                {expertiseStats[2].suffix}
+                {expertiseStatsData[2].suffix}
               </span>
             </div>
             <p className="text-sm md:text-base text-section-light-muted">
-              {expertiseStats[2].label}
+              {t(`stats.${expertiseStatsData[2].labelKey}`)}
             </p>
           </motion.div>
 
@@ -120,14 +129,14 @@ export default function AboutExpertise() {
               <div>
                 <div className="flex items-baseline gap-1 mb-2">
                   <span className="text-5xl md:text-6xl font-bold">
-                    <AnimatedCounter target={expertiseStats[3].value} />
+                    <AnimatedCounter target={expertiseStatsData[3].value} />
                   </span>
                   <span className="text-3xl font-bold opacity-80">
-                    {expertiseStats[3].suffix}
+                    {expertiseStatsData[3].suffix}
                   </span>
                 </div>
                 <p className="text-lg md:text-xl opacity-90">
-                  {expertiseStats[3].label}
+                  {t(`stats.${expertiseStatsData[3].labelKey}`)}
                 </p>
               </div>
               {/* Icon */}
@@ -144,24 +153,6 @@ export default function AboutExpertise() {
             {/* Decorative pattern */}
             <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-white/5" />
           </motion.div>
-        </motion.div>
-
-        {/* Mission statement */}
-        <motion.div
-          className="mt-20 text-center"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-        >
-          <div className="inline-flex items-center gap-2 mb-4 text-sm font-medium tracking-wide uppercase text-section-light-muted">
-            <span className="w-2 h-2 rounded-full bg-accent" />
-            Our Mission
-          </div>
-          <h2 className="text-fluid-section-title font-semibold tracking-tight text-section-light-fg max-w-3xl mx-auto">
-            To create a world made of thoughtful technology and transformative
-            digital experiences.
-          </h2>
         </motion.div>
       </div>
     </section>

@@ -25,7 +25,7 @@ export default function FAQItem({
       transition={{
         duration: 0.5,
         delay: index * 0.1,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.22, 1, 0.36, 1] as const,
       }}
       className="border-b border-section-border last:border-b-0"
     >
@@ -63,7 +63,7 @@ export default function FAQItem({
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] as const }}
             className="overflow-hidden"
           >
             <p className="pb-6 text-section-light-muted leading-relaxed max-w-3xl">

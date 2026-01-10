@@ -39,20 +39,20 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-/* Pulse animation for availability badge */
-@keyframes pulse-green {
-  0%, 100% {
-    opacity: 1;
+/* Ping animation for availability badge */
+@keyframes ping-green {
+  0% {
     transform: scale(1);
+    opacity: 0.75;
   }
-  50% {
-    opacity: 0.7;
-    transform: scale(1.1);
+  75%, 100% {
+    transform: scale(2.5);
+    opacity: 0;
   }
 }
 
-.animate-pulse-green {
-  animation: pulse-green 2s ease-in-out infinite;
+.animate-ping-green {
+  animation: ping-green 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 /* Smooth scrolling */
@@ -135,4 +135,35 @@ html {
 
 .animate-scroll-infinite:hover {
   animation-play-state: paused;
+}
+
+/* Project Cards */
+.project-card-image {
+  aspect-ratio: 16 / 10;
+}
+
+/* Gallery Scroll */
+.gallery-scroll {
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-scroll > * {
+  scroll-snap-align: start;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Number highlight for duration */
+.number-highlight {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  line-height: 1;
 }

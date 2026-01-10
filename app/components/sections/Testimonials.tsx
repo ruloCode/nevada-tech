@@ -2,13 +2,16 @@
 
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import TestimonialCard from "./TestimonialCard";
-import { testimonials } from "@/app/data/testimonials";
+
+const testimonialIds = ["1", "2", "3", "4", "5"];
 
 export default function Testimonials() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const t = useTranslations("Testimonials");
 
   const checkScrollability = () => {
     if (containerRef.current) {
@@ -42,7 +45,7 @@ export default function Testimonials() {
               className="inline-flex items-center gap-2 mb-4 text-sm font-medium tracking-wide uppercase text-section-light-muted"
             >
               <span className="w-2 h-2 rounded-full bg-accent" />
-              Our Clients
+              {t("label")}
             </motion.div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -51,7 +54,7 @@ export default function Testimonials() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-fluid-section-title font-semibold tracking-tight text-section-light-fg"
             >
-              What They Say About Us
+              {t("title")}
             </motion.h2>
           </div>
 
@@ -119,13 +122,13 @@ export default function Testimonials() {
           msOverflowStyle: "none",
         }}
       >
-        {testimonials.map((testimonial) => (
+        {testimonialIds.map((id) => (
           <TestimonialCard
-            key={testimonial.id}
-            quote={testimonial.quote}
-            author={testimonial.author}
-            role={testimonial.role}
-            company={testimonial.company}
+            key={id}
+            quote={t(`items.${id}.quote`)}
+            author={t(`items.${id}.author`)}
+            role={t(`items.${id}.role`)}
+            company={t(`items.${id}.company`)}
           />
         ))}
       </div>

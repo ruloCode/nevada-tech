@@ -12,7 +12,7 @@ const letterVariants = {
     transition: {
       delay: i * 0.03,
       duration: 0.5,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   }),
 };
@@ -35,7 +35,7 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -102,7 +102,7 @@ export default function AboutHero() {
           variants={itemVariants}
           className="inline-flex items-center gap-2 mb-8 text-sm font-medium tracking-wide uppercase text-muted"
         >
-          <span className="w-2 h-2 rounded-full bg-accent animate-pulse-green" />
+          <span className="w-2 h-2 rounded-full bg-accent animate-ping-green" />
           About Nevada Tech
         </motion.div>
 

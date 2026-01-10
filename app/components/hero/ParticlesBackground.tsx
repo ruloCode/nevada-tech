@@ -34,7 +34,7 @@ export default function ParticlesBackground() {
     fpsLimit: 60,
     particles: {
       color: {
-        value: "#ffffff",
+        value: ["#ffffff", "#86D0DA", "#ffffff", "#ffffff"],
       },
       move: {
         enable: true,
@@ -74,6 +74,24 @@ export default function ParticlesBackground() {
       },
     },
     detectRetina: true,
+    interactivity: {
+      detectsOn: "window",
+      events: {
+        onHover: {
+          enable: true,
+          mode: "grab",
+        },
+      },
+      modes: {
+        grab: {
+          distance: 140,
+          links: {
+            opacity: 0.3,
+            color: "#86D0DA",
+          },
+        },
+      },
+    },
   };
 
   if (!init) {

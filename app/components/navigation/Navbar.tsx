@@ -2,17 +2,21 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Button from "../ui/Button";
-
-const navLinks = [
-  { label: "About", href: "/about" },
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-];
+import LanguageSwitcher from "../ui/LanguageSwitcher";
+import { Link } from "@/app/i18n/navigation";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const t = useTranslations("Navbar");
+
+  const navLinks = [
+    { label: t("about"), href: "/about" },
+    { label: t("services"), href: "/#services" },
+    { label: t("projects"), href: "/#projects" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +31,7 @@ export default function Navbar() {
       <motion.header
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
             ? "bg-black/80 backdrop-blur-xl border-b border-white/5"
@@ -36,30 +40,31 @@ export default function Navbar() {
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           {/* Logo */}
-          <a href="#" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <span className="text-xl font-semibold tracking-tight text-white">
               Nevada<span className="text-white/60">Tech</span>
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 className="relative text-sm text-white/70 transition-colors hover:text-white group"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 h-px w-0 bg-white transition-all duration-300 group-hover:w-full" />
-              </a>
+              </Link>
             ))}
           </div>
 
-          {/* Desktop CTA */}
+          {/* Desktop CTA + Language Switcher */}
           <div className="hidden lg:flex items-center gap-4">
+            <LanguageSwitcher />
             <Button variant="outline" href="#contact">
-              Contact us
+              {t("contact")}
             </Button>
           </div>
 
@@ -98,22 +103,25 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] as const }}
             className="fixed inset-0 z-40 bg-black/95 backdrop-blur-xl lg:hidden pt-24"
           >
             <div className="flex flex-col items-center gap-8 p-8">
               {navLinks.map((link, index) => (
-                <motion.a
+                <motion.div
                   key={link.label}
-                  href={link.href}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-2xl font-medium text-white/80 hover:text-white transition-colors"
                 >
-                  {link.label}
-                </motion.a>
+                  <Link
+                    href={link.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-2xl font-medium text-white/80 hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
               ))}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -121,9 +129,23 @@ export default function Navbar() {
                 transition={{ delay: 0.3 }}
                 className="mt-4"
               >
-                <Button variant="outline" href="#contact">
-                  Contact us
+                <Button
+                  variant="outline"
+                  href="#contact"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {t("contact")}
                 </Button>
+              </motion.div>
+
+              {/* Language Switcher in Mobile Menu */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className="mt-4"
+              >
+                <LanguageSwitcher />
               </motion.div>
             </div>
           </motion.div>

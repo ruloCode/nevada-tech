@@ -25,44 +25,39 @@ export default function ServiceCard({
         delay: index * 0.1,
         ease: [0.22, 1, 0.36, 1],
       }}
-      whileHover={{ scale: 1.02, y: -5 }}
-      className="group relative flex flex-col justify-between p-6 md:p-8 rounded-2xl bg-section-card-bg transition-colors duration-300 hover:bg-section-card-hover cursor-pointer min-h-[200px] md:min-h-[240px]"
+      className="group relative overflow-hidden rounded-2xl min-h-[200px] md:min-h-[240px]
+                 bg-section-card-bg hover:bg-[#1a1a2e]
+                 transition-all duration-400 cursor-pointer"
     >
-      {/* Number */}
-      <span className="text-sm font-medium text-section-light-muted/60 transition-colors duration-300 group-hover:text-section-light-muted">
-        {number}
-      </span>
-
-      {/* Content */}
-      <div className="mt-auto">
-        <h3 className="text-lg md:text-xl font-semibold text-section-light-fg mb-2 transition-transform duration-300 group-hover:translate-x-1">
+      {/* Front Layer - Visible por defecto */}
+      <div
+        className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between
+                      opacity-100 group-hover:opacity-0
+                      transition-opacity duration-300 ease-out"
+      >
+        <span className="text-sm font-medium text-section-light-muted/60">
+          {number}
+        </span>
+        <h3 className="text-lg md:text-xl font-semibold text-section-light-fg">
           {title}
         </h3>
-        <p className="text-sm text-section-light-muted/80 line-clamp-2 opacity-0 max-h-0 overflow-hidden transition-all duration-300 group-hover:opacity-100 group-hover:max-h-20">
-          {description}
-        </p>
       </div>
 
-      {/* Hover Arrow Indicator */}
-      <motion.div
-        className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        initial={{ x: -5, opacity: 0 }}
-        whileHover={{ x: 0, opacity: 1 }}
+      {/* Back Layer - Visible en hover */}
+      <div
+        className="absolute inset-0 p-6 md:p-8 flex flex-col
+                      opacity-0 group-hover:opacity-100
+                      transition-opacity duration-300 ease-out delay-100"
       >
-        <svg
-          className="w-5 h-5 text-section-light-fg"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M7 17L17 7M17 7H7M17 7v10"
-          />
-        </svg>
-      </motion.div>
+        <h3 className="text-lg md:text-xl font-semibold text-white">{title}</h3>
+
+        {/* Punto decorativo */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="w-2 h-2 rounded-full bg-white/80" />
+        </div>
+
+        <p className="text-sm text-white/70 line-clamp-3">{description}</p>
+      </div>
     </motion.div>
   );
 }

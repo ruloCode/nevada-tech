@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import Navbar from "../navigation/Navbar";
 import HeroContent from "./HeroContent";
+import DecorativeLines from "./DecorativeLines";
 
 // Dynamic import for particles to avoid SSR issues
 const ParticlesBackground = dynamic(() => import("./ParticlesBackground"), {
@@ -11,14 +12,14 @@ const ParticlesBackground = dynamic(() => import("./ParticlesBackground"), {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#0a0a0a]">
+    <section className="relative min-h-screen overflow-hidden bg-[#040E15]">
       {/* Background gradient effects */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Main radial gradient */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-radial from-blue-500/10 via-transparent to-transparent blur-3xl" />
+        {/* Main radial gradient - teal tinted */}
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-radial from-[#3A818D]/8 via-transparent to-transparent blur-3xl" />
 
-        {/* Secondary glow */}
-        <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] rounded-full bg-gradient-radial from-purple-500/5 via-transparent to-transparent blur-3xl" />
+        {/* Secondary glow - subtle teal */}
+        <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] rounded-full bg-gradient-radial from-[#3A818D]/5 via-transparent to-transparent blur-3xl" />
 
         {/* Grid overlay */}
         <div
@@ -31,6 +32,9 @@ export default function Hero() {
         />
       </div>
 
+      {/* Decorative curved lines */}
+      <DecorativeLines />
+
       {/* Particles */}
       <ParticlesBackground />
 
@@ -41,7 +45,7 @@ export default function Hero() {
       <HeroContent />
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#040E15] to-transparent" />
     </section>
   );
 }

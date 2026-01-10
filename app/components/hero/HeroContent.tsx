@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import AvailabilityBadge from "./AvailabilityBadge";
 import Button from "../ui/Button";
 
@@ -22,12 +23,14 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
 
 export default function HeroContent() {
+  const t = useTranslations("Hero");
+
   return (
     <motion.div
       variants={containerVariants}
@@ -49,9 +52,9 @@ export default function HeroContent() {
           fontSize: "clamp(2rem, 6vw, 4.5rem)",
         }}
       >
-        <span className="text-white">Transform Ideas Into</span>
+        <span className="text-white">{t("titleLine1")}</span>
         <br />
-        <span className="text-white">Digital Success</span>
+        <span className="text-white">{t("titleLine2")}</span>
       </motion.h1>
 
       {/* Description - Fluid Typography */}
@@ -62,8 +65,7 @@ export default function HeroContent() {
           fontSize: "clamp(0.95rem, 2vw, 1.25rem)",
         }}
       >
-        We&apos;re your partner in product design, website creation,
-        and branding for every stage of your business.
+        {t("subtitle")}
       </motion.p>
 
       {/* CTAs - Responsive layout */}
@@ -72,10 +74,10 @@ export default function HeroContent() {
         className="mt-8 sm:mt-10 flex flex-col gap-3 sm:flex-row sm:gap-4 w-full sm:w-auto px-4 sm:px-0"
       >
         <Button variant="outline" href="#services" className="w-full sm:w-auto sm:min-w-[140px]">
-          Services
+          {t("services")}
         </Button>
         <Button variant="solid" href="#projects" className="w-full sm:w-auto sm:min-w-[140px]">
-          Projects
+          {t("projects")}
         </Button>
       </motion.div>
     </motion.div>

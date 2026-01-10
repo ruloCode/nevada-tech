@@ -1,8 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function CTA() {
+  const t = useTranslations("CTA");
+
   return (
     <section
       id="contact"
@@ -19,18 +22,6 @@ export default function CTA() {
 
       <div className="container-hero relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Label */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 mb-6 text-sm font-medium tracking-wide uppercase text-muted"
-          >
-            <span className="w-2 h-2 rounded-full bg-accent" />
-            Ready to start?
-          </motion.div>
-
           {/* Title */}
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -39,9 +30,7 @@ export default function CTA() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-fluid-hero font-semibold tracking-tight text-foreground mb-6"
           >
-            Let&apos;s Work
-            <br />
-            <span className="text-muted">Together</span>
+            {t("title")}
           </motion.h2>
 
           {/* Description */}
@@ -52,11 +41,10 @@ export default function CTA() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-muted text-lg md:text-xl max-w-2xl mx-auto mb-10"
           >
-            Let&apos;s bring your vision to life and transform your ideas into
-            powerful digital solutions that drive growth and success.
+            {t("subtitle")}
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -70,7 +58,7 @@ export default function CTA() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              Schedule a Call
+              {t("button")}
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -84,14 +72,6 @@ export default function CTA() {
                   d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
-            </motion.a>
-            <motion.a
-              href="mailto:hello@nevadatech.com?subject=Project%20Inquiry"
-              className="inline-flex items-center gap-2 px-8 py-4 border border-border text-foreground rounded-full font-medium hover:border-foreground transition-colors duration-300"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Get Pricing Info
             </motion.a>
           </motion.div>
         </div>

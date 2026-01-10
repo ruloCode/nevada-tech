@@ -26,7 +26,7 @@ export default function StatCard({
       transition={{
         duration: 0.6,
         delay: index * 0.15,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.22, 1, 0.36, 1] as const,
       }}
       className="relative flex items-start gap-4 p-6 md:p-8"
     >
