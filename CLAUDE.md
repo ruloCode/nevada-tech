@@ -1,25 +1,57 @@
 # Nevada Tech Website
 
 ## MCP Servers Configurados
-- **next-devtools**: Errores Next.js, hydration, rutas, logs del dev server
-- **playwright**: Screenshots automáticos, testing visual, browser automation
-- **context7**: Documentación actualizada de Next.js/React/Tailwind
-- **github**: PRs, issues, code review (requiere GITHUB_TOKEN)
 
-### Uso de MCPs
+### 1. next-devtools (Next.js DevTools)
+Detecta errores, hydration issues, estructura de rutas, logs del dev server.
 ```
-# Al iniciar sesión en proyecto Next.js:
-"usa init de next-devtools para configurar contexto"
+# SIEMPRE al iniciar trabajo en este proyecto:
+Usa la tool "init" de next-devtools para configurar contexto
 
-# Para ver errores:
-"¿qué errores hay en mi aplicación Next.js?"
+# Ver errores en tiempo real:
+Usa nextjs_call con action "get_errors"
 
-# Para documentación actualizada:
-"usa context7 para buscar cómo usar generateMetadata en Next.js 16"
+# Ver estructura de rutas:
+Usa nextjs_call con action "get_routes"
 
-# Para screenshots:
-"toma screenshot de localhost:3000"
+# Buscar en docs oficiales:
+Usa nextjs_docs con action "search" y query "generateMetadata"
 ```
+
+### 2. playwright (Browser Automation)
+Screenshots, testing visual, interacción con el browser.
+```
+# Tomar screenshot:
+Usa browser_eval con action "screenshot" url "http://localhost:3000"
+
+# Navegar y verificar:
+Usa browser_eval con action "navigate" url "http://localhost:3000"
+```
+
+### 3. context7 (Documentación Actualizada)
+Docs actualizados de Next.js, React, Tailwind y otros frameworks.
+```
+# Buscar documentación:
+Usa resolve con libraryName "nextjs"
+Usa resolve con libraryName "react" 
+Usa resolve con libraryName "tailwindcss"
+```
+
+### 4. github (GitHub Integration)
+PRs, issues, code review, repositorios.
+```
+# Crear PR:
+Usa create_pull_request
+
+# Ver issues:
+Usa list_issues
+
+# Crear issue:
+Usa create_issue
+```
+
+### Verificar MCPs conectados
+Dentro de Claude Code ejecuta: `/mcp`
 
 ## Stack
 - Next.js 16.1.1 (App Router) + React 19
