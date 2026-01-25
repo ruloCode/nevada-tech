@@ -6,6 +6,9 @@ import AboutPhilosophy from "@/app/components/about/AboutPhilosophy";
 import AboutProcess from "@/app/components/about/AboutProcess";
 import AboutExpertise from "@/app/components/about/AboutExpertise";
 import AboutValues from "@/app/components/about/AboutValues";
+import AboutMission from "@/app/components/about/AboutMission";
+import AboutVision from "@/app/components/about/AboutVision";
+import AboutCulture from "@/app/components/about/AboutCulture";
 import AboutCareers from "@/app/components/about/AboutCareers";
 import CTA from "@/app/components/sections/CTA";
 
@@ -35,6 +38,9 @@ export default async function AboutPage({ params }: AboutPageProps) {
       <AboutProcess />
       <AboutExpertise />
       <AboutValues />
+      <AboutMission />
+      <AboutVision />
+      <AboutCulture />
       <AboutCareers />
       <CTA />
     </main>

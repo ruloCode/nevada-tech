@@ -264,6 +264,81 @@
       "headline": "¿Listo para Construir Algo Legendario?",
       "subtitle": "Siempre buscamos talento excepcional que se niegue a conformarse con lo ordinario.",
       "cta": "Únete a la Revolución"
+    },
+    "mission": {
+      "label": "Nuestra Misión",
+      "title": "Transformando el Futuro",
+      "statements": {
+        "1": "Crear soluciones de software impulsadas por inteligencia artificial que optimicen procesos, automaticen operaciones y ayuden a empresas y personas a tomar mejores decisiones, transformando la tecnología en un aliado estratégico para su crecimiento.",
+        "2": "Impulsar la transformación digital de nuestros clientes mediante software innovador, automatización inteligente y experiencias digitales eficientes, convirtiendo la tecnología en una ventaja real para sus negocios.",
+        "3": "Crear tecnología que simplifique lo complejo, potencie ideas y acelere el crecimiento de empresas, construyendo soluciones digitales sólidas hoy, con la mirada puesta en el futuro."
+      }
+    },
+    "vision": {
+      "label": "Nuestra Visión",
+      "title": "Hacia Dónde Vamos",
+      "statements": {
+        "1": "Ser una empresa de referencia en el desarrollo de soluciones tecnológicas basadas en inteligencia artificial, reconocida por ayudar a empresas a innovar, escalar y competir a nivel global mediante software inteligente y eficiente.",
+        "2": "Convertirnos en un aliado estratégico líder en transformación digital, integrando inteligencia artificial y desarrollo de software para impulsar la eficiencia, la automatización y el crecimiento sostenible de nuestros clientes.",
+        "3": "Construir un futuro donde la inteligencia artificial y el software trabajen juntos para simplificar procesos, potenciar ideas y generar un impacto positivo y duradero en empresas de todos los tamaños."
+      }
+    },
+    "culture": {
+      "label": "Cultura NevadaTech",
+      "title": "Cómo Pensamos y Actuamos",
+      "summary": "NevadaTech es una empresa remota que construye software e inteligencia artificial con ownership, datos y feedback honesto, enfocada en generar impacto real para sus clientes.",
+      "principles": {
+        "ownership": {
+          "title": "Ownership Total",
+          "description": "En NevadaTech cada persona es dueña de su trabajo. Nos hacemos responsables de los resultados, no solo de las tareas. Si algo falla, lo corregimos; no buscamos culpables. Pensamos como si el negocio fuera nuestro.",
+          "quote": "Si lo ves, es tuyo."
+        },
+        "remote": {
+          "title": "Compañía 100% Remota",
+          "description": "Creemos en el trabajo remoto como ventaja competitiva. Medimos resultados, no horas conectadas. La comunicación es clara, escrita y documentada. Respetamos el tiempo, los espacios y la autonomía.",
+          "quote": "La confianza es la base del trabajo remoto."
+        },
+        "feedback": {
+          "title": "Feedback Honesto y Respetuoso",
+          "description": "El feedback directo nos hace mejores. Decimos las cosas a tiempo, con respeto y claridad. Preferimos conversaciones incómodas a problemas ocultos. El objetivo siempre es mejorar, no ganar discusiones.",
+          "quote": "Honestidad sin ego, feedback sin ataque."
+        },
+        "client": {
+          "title": "El Cliente como Fuente de Verdad",
+          "description": "Escuchar al cliente es parte del trabajo. El feedback del cliente guía mejoras y decisiones. No defendemos ideas, defendemos resultados. Aprendemos de cada proyecto, incluso de los errores.",
+          "quote": "El mejor roadmap empieza escuchando."
+        },
+        "data": {
+          "title": "Decisiones Basadas en Datos",
+          "description": "Las opiniones importan, los datos deciden. Medimos impacto, uso y resultados. Probamos, analizamos y ajustamos. La intuición se valida con información.",
+          "quote": "Sin datos, solo son suposiciones."
+        },
+        "ai": {
+          "title": "IA como Copiloto Estratégico",
+          "description": "Usamos inteligencia artificial para acelerar desarrollo, mejorar decisiones y automatizar sin perder criterio humano.",
+          "quote": "La IA potencia el talento, no lo reemplaza."
+        }
+      },
+      "coreValues": {
+        "title": "Valores que nos Definen",
+        "items": {
+          "ownership": "Ownership",
+          "transparency": "Transparencia",
+          "excellence": "Excelencia técnica",
+          "learning": "Aprendizaje continuo",
+          "results": "Orientación a resultados",
+          "innovation": "Innovación con propósito"
+        }
+      },
+      "clientWork": {
+        "title": "Cómo Trabajamos con Clientes",
+        "items": {
+          "expectations": "Expectativas claras desde el inicio",
+          "communication": "Comunicación honesta y constante",
+          "scalable": "Soluciones pensadas para escalar",
+          "support": "Acompañamiento real, no solo entregables"
+        }
+      }
     }
   },
   "Projects": {

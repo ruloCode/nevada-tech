@@ -264,6 +264,81 @@
       "headline": "Ready to Build Something Legendary?",
       "subtitle": "We're always looking for exceptional talent who refuse to settle for ordinary.",
       "cta": "Join the Revolution"
+    },
+    "mission": {
+      "label": "Our Mission",
+      "title": "Transforming the Future",
+      "statements": {
+        "1": "Create AI-powered software solutions that optimize processes, automate operations, and help businesses and individuals make better decisions, transforming technology into a strategic ally for their growth.",
+        "2": "Drive our clients' digital transformation through innovative software, intelligent automation, and efficient digital experiences, turning technology into a real competitive advantage for their businesses.",
+        "3": "Create technology that simplifies complexity, empowers ideas, and accelerates business growth, building solid digital solutions today with an eye on the future."
+      }
+    },
+    "vision": {
+      "label": "Our Vision",
+      "title": "Where We're Heading",
+      "statements": {
+        "1": "To be a leading company in developing AI-based technological solutions, recognized for helping businesses innovate, scale, and compete globally through intelligent and efficient software.",
+        "2": "To become a leading strategic partner in digital transformation, integrating artificial intelligence and software development to drive efficiency, automation, and sustainable growth for our clients.",
+        "3": "To build a future where artificial intelligence and software work together to simplify processes, empower ideas, and generate a positive and lasting impact on businesses of all sizes."
+      }
+    },
+    "culture": {
+      "label": "NevadaTech Culture",
+      "title": "How We Think and Act",
+      "summary": "NevadaTech is a remote company that builds software and artificial intelligence with ownership, data, and honest feedback, focused on generating real impact for its clients.",
+      "principles": {
+        "ownership": {
+          "title": "Total Ownership",
+          "description": "At NevadaTech, everyone owns their work. We take responsibility for results, not just tasks. If something fails, we fix it; we don't look for blame. We think as if the business were our own.",
+          "quote": "If you see it, it's yours."
+        },
+        "remote": {
+          "title": "100% Remote Company",
+          "description": "We believe in remote work as a competitive advantage. We measure results, not hours connected. Communication is clear, written, and documented. We respect time, spaces, and autonomy.",
+          "quote": "Trust is the foundation of remote work."
+        },
+        "feedback": {
+          "title": "Honest and Respectful Feedback",
+          "description": "Direct feedback makes us better. We say things on time, with respect and clarity. We prefer uncomfortable conversations over hidden problems. The goal is always to improve, not to win arguments.",
+          "quote": "Honesty without ego, feedback without attack."
+        },
+        "client": {
+          "title": "The Client as Source of Truth",
+          "description": "Listening to the client is part of the job. Client feedback guides improvements and decisions. We don't defend ideas, we defend results. We learn from every project, even from mistakes.",
+          "quote": "The best roadmap starts with listening."
+        },
+        "data": {
+          "title": "Data-Driven Decisions",
+          "description": "Opinions matter, data decides. We measure impact, usage, and results. We test, analyze, and adjust. Intuition is validated with information.",
+          "quote": "Without data, they're just assumptions."
+        },
+        "ai": {
+          "title": "AI as Strategic Copilot",
+          "description": "We use artificial intelligence to accelerate development, improve decisions, and automate without losing human judgment.",
+          "quote": "AI empowers talent, it doesn't replace it."
+        }
+      },
+      "coreValues": {
+        "title": "Values That Define Us",
+        "items": {
+          "ownership": "Ownership",
+          "transparency": "Transparency",
+          "excellence": "Technical Excellence",
+          "learning": "Continuous Learning",
+          "results": "Results-Oriented",
+          "innovation": "Purposeful Innovation"
+        }
+      },
+      "clientWork": {
+        "title": "How We Work with Clients",
+        "items": {
+          "expectations": "Clear expectations from the start",
+          "communication": "Honest and constant communication",
+          "scalable": "Solutions designed to scale",
+          "support": "Real support, not just deliverables"
+        }
+      }
     }
   },
   "Projects": {
