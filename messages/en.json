@@ -175,19 +175,24 @@
   },
   "About": {
     "hero": {
+      "label": "About Nevada Tech",
       "titleLine1": "We Don't Just Build Software",
       "titleLine2": "We Build Empires",
       "subtitle": "The team behind the transformation"
     },
     "philosophy": {
+      "label": "Our Philosophy",
       "headline": "We're Not Here to Follow Trends. We Set Them.",
       "paragraph1": "In a world drowning in mediocre software and forgettable digital experiences, we chose a different path. Nevada Tech was built on a simple premise: technology should be transformative, not transactional.",
       "paragraph2": "We don't just write code—we architect digital empires. We don't just design interfaces—we create experiences that command attention. Every project we touch becomes a testament to what's possible when ambition meets execution.",
       "paragraph3": "Our clients don't come to us for safe solutions. They come to us because they're ready to dominate their markets, disrupt their industries, and build something that matters.",
-      "quote": "Excellence is not a goal—it's the minimum standard."
+      "quote": "Excellence is not a goal—it's the minimum standard.",
+      "cta": "Start Your Transformation"
     },
     "founders": {
+      "label": "Who We Are",
       "title": "Meet the Founders",
+      "subtitle": "We are explorers. We constantly seek ways to make an impact through technology and innovation.",
       "members": {
         "founder-1": {
           "name": "Alex Rivera",
@@ -202,7 +207,9 @@
       }
     },
     "process": {
+      "label": "Our Approach",
       "title": "Our Process",
+      "subtitle": "First step to solving a problem is recognizing there is one.",
       "steps": {
         "step-1": {
           "title": "Discovery",
@@ -227,7 +234,9 @@
       }
     },
     "values": {
+      "label": "Our Values",
       "title": "Our Values",
+      "subtitle": "commitments",
       "items": {
         "value-1": {
           "title": "Relentless Innovation",
@@ -261,6 +270,7 @@
       }
     },
     "careers": {
+      "label": "Careers",
       "headline": "Ready to Build Something Legendary?",
       "subtitle": "We're always looking for exceptional talent who refuse to settle for ordinary.",
       "cta": "Join the Revolution"

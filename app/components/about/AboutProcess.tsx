@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { processSteps } from "@/app/data/about";
+import { useTranslations } from "next-intl";
+
+const stepIds = ["step-1", "step-2", "step-3", "step-4", "step-5"] as const;
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -26,6 +28,8 @@ const itemVariants = {
 };
 
 export default function AboutProcess() {
+  const t = useTranslations("About.process");
+
   return (
     <section className="section-light py-20 md:py-32">
       <div className="container-hero">
@@ -39,10 +43,10 @@ export default function AboutProcess() {
         >
           <div className="inline-flex items-center gap-2 mb-4 text-sm font-medium tracking-wide uppercase text-section-light-muted">
             <span className="w-2 h-2 rounded-full bg-accent" />
-            Our Approach
+            {t("label")}
           </div>
           <h2 className="text-fluid-section-title font-semibold tracking-tight text-section-light-fg max-w-2xl">
-            First step to solving a problem is recognizing there is one.
+            {t("subtitle")}
           </h2>
         </motion.div>
 
@@ -54,9 +58,9 @@ export default function AboutProcess() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {processSteps.map((step, index) => (
+          {stepIds.map((id, index) => (
             <motion.div
-              key={step.id}
+              key={id}
               variants={itemVariants}
               className="group relative"
             >
@@ -66,21 +70,21 @@ export default function AboutProcess() {
               >
                 {/* Step number */}
                 <div className="text-5xl font-bold text-section-light-fg/10 mb-4 transition-colors duration-300 group-hover:text-accent/20">
-                  {step.number}
+                  {String(index + 1).padStart(2, "0")}
                 </div>
 
                 {/* Title */}
                 <h3 className="text-lg font-semibold text-section-light-fg mb-3">
-                  {step.title}
+                  {t(`steps.${id}.title`)}
                 </h3>
 
                 {/* Description */}
                 <p className="text-sm text-section-light-muted leading-relaxed">
-                  {step.description}
+                  {t(`steps.${id}.description`)}
                 </p>
 
                 {/* Connector line (desktop only) */}
-                {index < processSteps.length - 1 && (
+                {index < stepIds.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-px bg-section-border" />
                 )}
               </motion.div>

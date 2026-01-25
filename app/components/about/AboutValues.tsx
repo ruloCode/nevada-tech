@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { companyValues } from "@/app/data/about";
+import { useTranslations } from "next-intl";
+
+const valueIds = ["value-1", "value-2", "value-3", "value-4"] as const;
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -26,6 +28,8 @@ const itemVariants = {
 };
 
 export default function AboutValues() {
+  const t = useTranslations("About.values");
+
   return (
     <section className="section-light py-20 md:py-32">
       <div className="container-hero">
@@ -39,12 +43,12 @@ export default function AboutValues() {
         >
           <div className="inline-flex items-center gap-2 mb-4 text-sm font-medium tracking-wide uppercase text-section-light-muted">
             <span className="w-2 h-2 rounded-full bg-accent" />
-            Our Values
+            {t("label")}
           </div>
           <h2 className="text-fluid-section-title font-semibold tracking-tight text-section-light-fg">
-            Our values and
+            {t("title")}
             <br />
-            <span className="text-section-light-muted">commitments</span>
+            <span className="text-section-light-muted">{t("subtitle")}</span>
           </h2>
         </motion.div>
 
@@ -56,9 +60,9 @@ export default function AboutValues() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {companyValues.map((value, index) => (
+          {valueIds.map((id, index) => (
             <motion.div
-              key={value.id}
+              key={id}
               variants={itemVariants}
               className="group"
             >
@@ -69,21 +73,21 @@ export default function AboutValues() {
                 {/* Header */}
                 <div className="flex items-start gap-4 mb-6">
                   <span className="text-4xl font-bold text-accent/30 transition-colors duration-300 group-hover:text-accent/50">
-                    {value.number}
+                    {String(index + 1).padStart(2, "0")}
                   </span>
                   <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-section-light-fg mb-2">
-                      {value.title}
+                      {t(`items.${id}.title`)}
                     </h3>
                     <p className="text-accent font-medium italic">
-                      &ldquo;{value.tagline}&rdquo;
+                      &ldquo;{t(`items.${id}.tagline`)}&rdquo;
                     </p>
                   </div>
                 </div>
 
                 {/* Description */}
                 <p className="text-section-light-muted leading-relaxed pl-14 md:pl-16">
-                  {value.description}
+                  {t(`items.${id}.description`)}
                 </p>
               </motion.div>
             </motion.div>

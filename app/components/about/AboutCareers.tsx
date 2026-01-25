@@ -1,10 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { careersContent } from "@/app/data/about";
+import { useTranslations } from "next-intl";
 import Button from "../ui/Button";
 
 export default function AboutCareers() {
+  const t = useTranslations("About.careers");
+
   return (
     <section className="relative py-20 md:py-32 overflow-hidden bg-background">
       {/* Background decorations */}
@@ -34,17 +36,17 @@ export default function AboutCareers() {
           {/* Label */}
           <div className="inline-flex items-center gap-2 mb-6 text-sm font-medium tracking-wide uppercase text-muted">
             <span className="w-2 h-2 rounded-full bg-accent animate-ping-green" />
-            Careers
+            {t("label")}
           </div>
 
           {/* Headline */}
           <h2 className="text-fluid-section-title md:text-5xl font-bold tracking-tight text-foreground mb-6">
-            {careersContent.headline}
+            {t("headline")}
           </h2>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted mb-10 max-w-2xl mx-auto">
-            {careersContent.subtitle}
+            {t("subtitle")}
           </p>
 
           {/* CTA */}
@@ -53,7 +55,7 @@ export default function AboutCareers() {
             whileTap={{ scale: 0.98 }}
           >
             <Button variant="solid" href="/careers">
-              {careersContent.cta}
+              {t("cta")}
             </Button>
           </motion.div>
         </motion.div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { philosophyContent } from "@/app/data/about";
+import { useTranslations } from "next-intl";
 import Button from "../ui/Button";
 
 const containerVariants = {
@@ -27,6 +27,10 @@ const itemVariants = {
 };
 
 export default function AboutPhilosophy() {
+  const t = useTranslations("About.philosophy");
+  const headline = t("headline");
+  const paragraphs = [t("paragraph1"), t("paragraph2"), t("paragraph3")];
+
   return (
     <section className="section-light-gray py-20 md:py-32 overflow-hidden">
       <div className="container-hero">
@@ -41,13 +45,13 @@ export default function AboutPhilosophy() {
           >
             <div className="inline-flex items-center gap-2 mb-4 text-sm font-medium tracking-wide uppercase text-section-light-muted">
               <span className="w-2 h-2 rounded-full bg-accent" />
-              Our Philosophy
+              {t("label")}
             </div>
             <h2 className="text-fluid-section-title font-semibold tracking-tight text-section-light-fg leading-tight">
-              {philosophyContent.headline.split(".")[0]}.
+              {headline.split(".")[0]}.
               <br />
               <span className="text-section-light-muted">
-                {philosophyContent.headline.split(".")[1]?.trim() || "We Set Them."}
+                {headline.split(".")[1]?.trim() || "We Set Them."}
               </span>
             </h2>
           </motion.div>
@@ -61,7 +65,7 @@ export default function AboutPhilosophy() {
             className="space-y-8"
           >
             {/* Paragraphs */}
-            {philosophyContent.paragraphs.map((paragraph, index) => (
+            {paragraphs.map((paragraph, index) => (
               <motion.p
                 key={index}
                 variants={itemVariants}
@@ -77,14 +81,14 @@ export default function AboutPhilosophy() {
               className="relative pl-6 border-l-2 border-accent my-10"
             >
               <p className="text-2xl md:text-3xl font-serif italic text-section-light-fg leading-snug">
-                &ldquo;{philosophyContent.quote}&rdquo;
+                &ldquo;{t("quote")}&rdquo;
               </p>
             </motion.blockquote>
 
             {/* CTA */}
             <motion.div variants={itemVariants}>
               <Button variant="solid-light" href="#contact">
-                Start Your Transformation
+                {t("cta")}
               </Button>
             </motion.div>
           </motion.div>

@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { teamMembers } from "@/app/data/about";
+import { useTranslations } from "next-intl";
+
+const founderIds = ["founder-1", "founder-2"] as const;
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -26,6 +28,8 @@ const itemVariants = {
 };
 
 export default function AboutFounders() {
+  const t = useTranslations("About.founders");
+
   return (
     <section className="section-light py-20 md:py-32">
       <div className="container-hero">
@@ -39,11 +43,10 @@ export default function AboutFounders() {
         >
           <div className="inline-flex items-center gap-2 mb-4 text-sm font-medium tracking-wide uppercase text-section-light-muted">
             <span className="w-2 h-2 rounded-full bg-accent" />
-            Who We Are
+            {t("label")}
           </div>
           <h2 className="text-fluid-section-title font-semibold tracking-tight text-section-light-fg max-w-3xl mx-auto">
-            We are explorers. We constantly seek ways to make an impact through
-            technology and innovation.
+            {t("subtitle")}
           </h2>
         </motion.div>
 
@@ -55,10 +58,10 @@ export default function AboutFounders() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {teamMembers.map((member) => (
+          {founderIds.map((id) => (
             <motion.a
-              key={member.id}
-              href={member.linkedin}
+              key={id}
+              href="https://linkedin.com/in/"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-section-card-bg cursor-pointer"
@@ -90,9 +93,9 @@ export default function AboutFounders() {
                 <div className="flex items-end justify-between">
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-1">
-                      {member.name}
+                      {t(`members.${id}.name`)}
                     </h3>
-                    <p className="text-white/70 text-sm">({member.role})</p>
+                    <p className="text-white/70 text-sm">({t(`members.${id}.role`)})</p>
                   </div>
                   {/* LinkedIn icon */}
                   <motion.div

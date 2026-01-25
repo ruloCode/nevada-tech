@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { heroContent } from "@/app/data/about";
+import { useTranslations } from "next-intl";
 
 const letterVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -72,6 +72,8 @@ function AnimatedText({ text, className }: { text: string; className?: string })
 }
 
 export default function AboutHero() {
+  const t = useTranslations("About.hero");
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Background gradients */}
@@ -103,16 +105,16 @@ export default function AboutHero() {
           className="inline-flex items-center gap-2 mb-8 text-sm font-medium tracking-wide uppercase text-muted"
         >
           <span className="w-2 h-2 rounded-full bg-accent animate-ping-green" />
-          About Nevada Tech
+          {t("label")}
         </motion.div>
 
         {/* Title */}
         <h1 className="text-fluid-hero font-bold tracking-tight text-foreground mb-4">
-          <AnimatedText text={heroContent.titleLine1} />
+          <AnimatedText text={t("titleLine1")} />
         </h1>
         <h1 className="text-fluid-hero font-bold tracking-tight mb-8">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-emerald-400 to-accent">
-            <AnimatedText text={heroContent.titleLine2} />
+            <AnimatedText text={t("titleLine2")} />
           </span>
         </h1>
 
@@ -121,7 +123,7 @@ export default function AboutHero() {
           variants={itemVariants}
           className="text-fluid-body text-muted max-w-xl mx-auto"
         >
-          {heroContent.subtitle}
+          {t("subtitle")}
         </motion.p>
 
         {/* Scroll indicator */}

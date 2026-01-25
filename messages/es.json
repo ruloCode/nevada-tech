@@ -175,19 +175,24 @@
   },
   "About": {
     "hero": {
+      "label": "Sobre Nevada Tech",
       "titleLine1": "No Solo Construimos Software",
       "titleLine2": "Construimos Imperios",
       "subtitle": "El equipo detrás de la transformación"
     },
     "philosophy": {
+      "label": "Nuestra Filosofía",
       "headline": "No Estamos Aquí para Seguir Tendencias. Las Creamos.",
       "paragraph1": "En un mundo ahogado en software mediocre y experiencias digitales olvidables, elegimos un camino diferente. Nevada Tech se construyó sobre una premisa simple: la tecnología debe ser transformadora, no transaccional.",
       "paragraph2": "No solo escribimos código—arquitectamos imperios digitales. No solo diseñamos interfaces—creamos experiencias que demandan atención. Cada proyecto que tocamos se convierte en un testimonio de lo que es posible cuando la ambición se encuentra con la ejecución.",
       "paragraph3": "Nuestros clientes no vienen a nosotros por soluciones seguras. Vienen porque están listos para dominar sus mercados, disrumpir sus industrias y construir algo que importe.",
-      "quote": "La excelencia no es una meta—es el estándar mínimo."
+      "quote": "La excelencia no es una meta—es el estándar mínimo.",
+      "cta": "Comienza Tu Transformación"
     },
     "founders": {
+      "label": "Quiénes Somos",
       "title": "Conoce a los Fundadores",
+      "subtitle": "Somos exploradores. Buscamos constantemente formas de generar impacto a través de la tecnología y la innovación.",
       "members": {
         "founder-1": {
           "name": "Alex Rivera",
@@ -202,7 +207,9 @@
       }
     },
     "process": {
+      "label": "Nuestro Enfoque",
       "title": "Nuestro Proceso",
+      "subtitle": "El primer paso para resolver un problema es reconocer que existe uno.",
       "steps": {
         "step-1": {
           "title": "Descubrimiento",
@@ -227,7 +234,9 @@
       }
     },
     "values": {
+      "label": "Nuestros Valores",
       "title": "Nuestros Valores",
+      "subtitle": "compromisos",
       "items": {
         "value-1": {
           "title": "Innovación Implacable",
@@ -261,6 +270,7 @@
       }
     },
     "careers": {
+      "label": "Carreras",
       "headline": "¿Listo para Construir Algo Legendario?",
       "subtitle": "Siempre buscamos talento excepcional que se niegue a conformarse con lo ordinario.",
       "cta": "Únete a la Revolución"
