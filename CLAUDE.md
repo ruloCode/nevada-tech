@@ -1,5 +1,26 @@
 # Nevada Tech Website
 
+## MCP Servers Configurados
+- **next-devtools**: Errores Next.js, hydration, rutas, logs del dev server
+- **playwright**: Screenshots automáticos, testing visual, browser automation
+- **context7**: Documentación actualizada de Next.js/React/Tailwind
+- **github**: PRs, issues, code review (requiere GITHUB_TOKEN)
+
+### Uso de MCPs
+```
+# Al iniciar sesión en proyecto Next.js:
+"usa init de next-devtools para configurar contexto"
+
+# Para ver errores:
+"¿qué errores hay en mi aplicación Next.js?"
+
+# Para documentación actualizada:
+"usa context7 para buscar cómo usar generateMetadata en Next.js 16"
+
+# Para screenshots:
+"toma screenshot de localhost:3000"
+```
+
 ## Stack
 - Next.js 16.1.1 (App Router) + React 19
 - TypeScript + Tailwind CSS 4
