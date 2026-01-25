@@ -195,14 +195,19 @@
       "subtitle": "We are explorers. We constantly seek ways to make an impact through technology and innovation.",
       "members": {
         "founder-1": {
-          "name": "Alex Rivera",
-          "role": "CEO & Founder",
-          "bio": "Visionary leader with 15+ years transforming businesses through technology."
+          "name": "Andrés Santana",
+          "role": "CEO & Co-Founder",
+          "bio": "Frontend Developer & UX/UI Designer specializing in React.js, JavaScript & Next.js. Passionate about creating exceptional digital experiences."
         },
         "founder-2": {
-          "name": "Jordan Chen",
+          "name": "Marlon Ramirez",
+          "role": "Backend Lead & Co-Founder",
+          "bio": "Backend developer with over 3 years of experience, specializing in creating robust and scalable solutions."
+        },
+        "founder-3": {
+          "name": "Cesar Ortiz",
           "role": "CTO & Co-Founder",
-          "bio": "Engineering mastermind behind our most ambitious technical solutions."
+          "bio": "Full Stack Developer with over 5 years of experience designing and building scalable web applications."
         }
       }
     },

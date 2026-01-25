@@ -3,7 +3,13 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-const founderIds = ["founder-1", "founder-2"] as const;
+const founderIds = ["founder-1", "founder-2", "founder-3"] as const;
+
+const linkedinUrls: Record<string, string> = {
+  "founder-1": "https://www.linkedin.com/in/rulocode/",
+  "founder-2": "https://www.linkedin.com/in/marlonramirezlizcano/",
+  "founder-3": "https://www.linkedin.com/in/cesar-ortiz-m/",
+};
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -52,7 +58,7 @@ export default function AboutFounders() {
 
         {/* Team grid */}
         <motion.div
-          className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto"
+          className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -61,7 +67,7 @@ export default function AboutFounders() {
           {founderIds.map((id) => (
             <motion.a
               key={id}
-              href="https://linkedin.com/in/"
+              href={linkedinUrls[id]}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-section-card-bg cursor-pointer"
