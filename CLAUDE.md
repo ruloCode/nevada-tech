@@ -76,10 +76,23 @@ Ver `.claude/agents/` para revisores especializados:
 - `/project:pre-commit` — Check rápido antes de commit
 - `/project:fix-i18n` — Sincronizar traducciones
 
-## Flujo de Trabajo Recomendado
+## Flujo de Trabajo (AUTOMÁTICO)
 ```
-1. Escribir código
-2. /project:pre-commit (verificación rápida)
-3. /project:quality (antes de PR o merge importante)
-4. git commit
+1. Claude escribe/edita código
+   ↓
+2. [Hook PostToolUse] ESLint auto-fix
+   ↓
+3. Claude termina la tarea
+   ↓
+4. [Hook Stop] Quality Check automático:
+   • Lint
+   • TypeScript check
+   • i18n sync
+   • Build verification
+   ↓
+5. Si hay errores → Claude los ve y puede corregir
+   Si todo OK → Listo para commit
 ```
+
+**El quality check corre automáticamente al terminar cada tarea.**
+Para checks manuales más detallados: `/project:quality`
