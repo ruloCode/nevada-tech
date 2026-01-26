@@ -196,17 +196,17 @@
       "members": {
         "founder-1": {
           "name": "Andrés Santana",
-          "role": "CEO y Co-Fundador",
+          "role": "CTO y Co-Fundador",
           "bio": "Frontend Developer y Diseñador UX/UI especializado en React.js, JavaScript y Next.js. Apasionado por crear experiencias digitales excepcionales."
         },
         "founder-2": {
           "name": "Marlon Ramirez",
-          "role": "Backend Lead y Co-Fundador",
+          "role": "COO y Co-Fundador",
           "bio": "Desarrollador backend con más de 3 años de experiencia, especializado en crear soluciones robustas y escalables."
         },
         "founder-3": {
           "name": "Cesar Ortiz",
-          "role": "CTO y Co-Fundador",
+          "role": "CEO y Co-Fundador",
           "bio": "Full Stack Developer con más de 5 años de experiencia diseñando y construyendo aplicaciones web escalables."
         }
       }
