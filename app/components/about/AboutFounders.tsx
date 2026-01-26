@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const founderIds = ["founder-1", "founder-2", "founder-3"] as const;
 
@@ -9,6 +10,12 @@ const linkedinUrls: Record<string, string> = {
   "founder-1": "https://www.linkedin.com/in/rulocode/",
   "founder-2": "https://www.linkedin.com/in/marlonramirezlizcano/",
   "founder-3": "https://www.linkedin.com/in/cesar-ortiz-m/",
+};
+
+const founderImages: Record<string, string> = {
+  "founder-1": "/team/andres.jpg",
+  "founder-2": "/team/marlon.jpg",
+  "founder-3": "/team/cesar.jpg",
 };
 
 const containerVariants = {
@@ -75,21 +82,14 @@ export default function AboutFounders() {
               whileHover={{ y: -8 }}
               transition={{ duration: 0.3 }}
             >
-              {/* Placeholder gradient background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-neutral-200 via-neutral-300 to-neutral-400" />
-
-              {/* Placeholder avatar icon */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-32 h-32 rounded-full bg-white/20 flex items-center justify-center">
-                  <svg
-                    className="w-16 h-16 text-white/60"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                  </svg>
-                </div>
-              </div>
+              {/* Founder image */}
+              <Image
+                src={founderImages[id]}
+                alt={t(`members.${id}.name`)}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
 
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
