@@ -7,7 +7,8 @@ import { routing, type Locale } from '@/app/i18n/routing';
 
 const localeLabels: Record<Locale, string> = {
   es: 'Español',
-  en: 'English'
+  en: 'English',
+  fr: 'Français'
 };
 
 interface LanguageSwitcherProps {

@@ -1,0 +1,396 @@
+{
+  "Navbar": {
+    "about": "À propos",
+    "services": "Services",
+    "projects": "Projets",
+    "contact": "Contactez-nous"
+  },
+  "LanguageSwitcher": {
+    "es": "Español",
+    "en": "English",
+    "fr": "Français"
+  },
+  "Hero": {
+    "available": "Disponible pour travailler",
+    "titleLine1": "Transformez vos Idées en",
+    "titleLine2": "Succès Numérique",
+    "subtitle": "Nous sommes votre partenaire en conception de produits, création de sites web et branding pour chaque étape de votre entreprise.",
+    "services": "Services",
+    "projects": "Projets"
+  },
+  "AboutPreview": {
+    "label": "À propos de nous",
+    "title": "Partenaires en Innovation Numérique",
+    "description": "Nous sommes une équipe de designers, développeurs et stratèges passionnés par la création d'expériences numériques exceptionnelles. Avec des années d'expérience, nous aidons les entreprises à naviguer dans le paysage numérique avec confiance et à atteindre leurs objectifs.",
+    "cta": "Rencontrez l'équipe"
+  },
+  "Services": {
+    "label": "Services",
+    "title": "Ce que nous faisons",
+    "items": {
+      "web-development": {
+        "title": "Développement Web",
+        "description": "Sites web et applications personnalisés avec des technologies modernes pour des performances optimales."
+      },
+      "mobile-apps": {
+        "title": "Applications Mobiles",
+        "description": "Applications natives et multiplateformes pour iOS et Android."
+      },
+      "cloud-solutions": {
+        "title": "Solutions Cloud",
+        "description": "Infrastructure AWS, GCP et Azure pour une fiabilité entreprise."
+      },
+      "ai-ml": {
+        "title": "IA/ML",
+        "description": "Modèles ML et IA qui transforment les données en insights business."
+      },
+      "ui-ux-design": {
+        "title": "Design UI/UX",
+        "description": "Design centré utilisateur avec des interfaces qui convertissent."
+      },
+      "devops": {
+        "title": "DevOps",
+        "description": "CI/CD, automatisation et IaC pour des déploiements plus rapides."
+      },
+      "tech-consulting": {
+        "title": "Conseil Tech",
+        "description": "Conseil stratégique pour des décisions éclairées et optimisation de stack."
+      },
+      "e-commerce": {
+        "title": "E-commerce",
+        "description": "Boutiques en ligne avec paiement fluide qui convertissent les visiteurs."
+      }
+    }
+  },
+  "Portfolio": {
+    "label": "Portfolio",
+    "title": "Projets Vedettes",
+    "viewAll": "Voir tous les projets",
+    "projects": {
+      "finflow": {
+        "title": "FinFlow",
+        "description": "Un tableau de bord fintech complet offrant des analyses en temps réel et des insights financiers alimentés par l'IA."
+      },
+      "healthsync": {
+        "title": "HealthSync",
+        "description": "Application mobile de santé permettant une communication fluide patient-médecin et un suivi de santé."
+      },
+      "retailhub": {
+        "title": "RetailHub",
+        "description": "Plateforme e-commerce moderne avec gestion avancée des stocks et expériences d'achat personnalisées."
+      },
+      "datavault": {
+        "title": "DataVault",
+        "description": "Solution de gestion de données entreprise avec sécurité robuste et infrastructure cloud évolutive."
+      },
+      "smarthome-pro": {
+        "title": "SmartHome Pro",
+        "description": "Tableau de bord IoT pour la domotique avec optimisation énergétique pilotée par l'IA et contrôle mobile."
+      }
+    }
+  },
+  "Stats": {
+    "projectsCompleted": "Projets Réalisés",
+    "clientSatisfaction": "Satisfaction Client",
+    "teamExperts": "Experts dans l'Équipe",
+    "yearsExperience": "Années d'Expérience"
+  },
+  "Testimonials": {
+    "label": "Témoignages",
+    "title": "Ce que disent nos Clients",
+    "items": {
+      "1": {
+        "quote": "Nevada Tech a complètement transformé notre présence numérique. Leur expertise en développement web et leur attention aux détails ont dépassé toutes les attentes. L'équipe a livré dans les temps et les résultats parlent d'eux-mêmes.",
+        "author": "Sarah Mitchell",
+        "role": "CEO",
+        "company": "TechVentures Inc"
+      },
+      "2": {
+        "quote": "Travailler avec Nevada Tech sur notre application mobile a été un tournant. Ils ont compris notre vision dès le premier jour et ont livré un produit que nos utilisateurs adorent. Je recommande vivement leurs services.",
+        "author": "Michael Chen",
+        "role": "Directeur Produit",
+        "company": "InnovateCo"
+      },
+      "3": {
+        "quote": "Le projet de migration cloud a été géré impeccablement. L'expertise DevOps de Nevada Tech nous a fait gagner un temps et des ressources considérables. Leur équipe est réactive, professionnelle et comprend vraiment les besoins entreprise.",
+        "author": "Emily Rodriguez",
+        "role": "CTO",
+        "company": "DataStream Solutions"
+      },
+      "4": {
+        "quote": "Les taux de conversion de notre plateforme e-commerce ont augmenté de 40% après la refonte. L'équipe UI/UX de Nevada Tech a créé une expérience qui convertit. Le meilleur investissement que nous avons fait cette année.",
+        "author": "James Wilson",
+        "role": "Fondateur",
+        "company": "ShopSmart"
+      },
+      "5": {
+        "quote": "L'intégration IA que Nevada Tech a construite pour nous a automatisé 60% de nos processus manuels. Leur expertise technique combinée à leur compréhension business est rare. Un partenaire exceptionnel.",
+        "author": "Lisa Thompson",
+        "role": "Directrice des Opérations",
+        "company": "AutomateNow"
+      }
+    }
+  },
+  "FAQ": {
+    "label": "FAQ",
+    "title": "Questions Fréquentes",
+    "items": {
+      "1": {
+        "question": "Dans quelles technologies êtes-vous spécialisés ?",
+        "answer": "Nous travaillons avec une large gamme de technologies modernes incluant React, Next.js, Node.js, Python, AWS, GCP, Azure, React Native, Flutter et divers frameworks IA/ML. Notre équipe reste à jour avec les tendances de l'industrie pour livrer des solutions de pointe."
+      },
+      "2": {
+        "question": "Combien de temps prend un projet typique ?",
+        "answer": "Les délais varient selon la portée et la complexité. Un site web simple peut prendre 4-6 semaines, tandis que les applications web ou mobiles complexes vont généralement de 3 à 6 mois. Nous fournissons des délais détaillés lors de notre consultation initiale."
+      },
+      "3": {
+        "question": "Offrez-vous un support et une maintenance continus ?",
+        "answer": "Oui, nous offrons des packages complets de support et maintenance. Cela inclut les corrections de bugs, les mises à jour de sécurité, l'optimisation des performances et les améliorations de fonctionnalités. Nous croyons en la construction de partenariats à long terme avec nos clients."
+      },
+      "4": {
+        "question": "Quel est votre processus de développement ?",
+        "answer": "Nous suivons une méthodologie agile avec des cycles de développement itératifs. Cela inclut les phases de découverte et planification, design, développement, tests et déploiement. Des points réguliers et des démos assurent l'alignement tout au long du projet."
+      },
+      "5": {
+        "question": "Comment gérez-vous la communication du projet ?",
+        "answer": "Nous utilisons des outils comme Slack, Jira et des appels vidéo réguliers pour maintenir une communication claire. Vous aurez un chef de projet dédié comme point de contact principal, avec des mises à jour hebdomadaires et accès à notre tableau de bord de gestion de projet."
+      },
+      "6": {
+        "question": "Avec quelles industries travaillez-vous ?",
+        "answer": "Nous servons des clients dans diverses industries incluant la fintech, la santé, l'e-commerce, le SaaS, l'éducation et l'entreprise. Notre expérience diversifiée nous permet d'apporter les meilleures pratiques et solutions innovantes à tout secteur."
+      },
+      "7": {
+        "question": "Travaillez-vous avec les startups ?",
+        "answer": "Absolument ! Nous adorons travailler avec les startups et comprenons les défis uniques de la construction d'un MVP et de la mise à l'échelle rapide. Nous offrons des modèles d'engagement flexibles adaptés aux budgets et délais des startups."
+      },
+      "8": {
+        "question": "Comment puis-je commencer ?",
+        "answer": "Contactez-nous simplement via notre formulaire ou planifiez un appel. Nous discuterons des exigences de votre projet, fournirons des recommandations initiales, et s'il y a une bonne correspondance, nous préparerons une proposition détaillée avec portée, délai et tarification."
+      }
+    }
+  },
+  "CTA": {
+    "title": "Prêt à Démarrer Votre Projet ?",
+    "subtitle": "Travaillons ensemble pour transformer vos idées en réalité numérique.",
+    "button": "Contactez-nous"
+  },
+  "About": {
+    "hero": {
+      "label": "À propos de Nevada Tech",
+      "titleLine1": "Nous ne construisons pas que des Logiciels",
+      "titleLine2": "Nous construisons des Empires",
+      "subtitle": "L'équipe derrière la transformation"
+    },
+    "philosophy": {
+      "label": "Notre Philosophie",
+      "headline": "Nous ne suivons pas les tendances. Nous les créons.",
+      "paragraph1": "Dans un monde noyé dans les logiciels médiocres et les expériences numériques oubliables, nous avons choisi un chemin différent. Nevada Tech a été construite sur une prémisse simple : la technologie doit être transformatrice, pas transactionnelle.",
+      "paragraph2": "Nous n'écrivons pas simplement du code—nous architecturons des empires numériques. Nous ne concevons pas simplement des interfaces—nous créons des expériences qui captent l'attention. Chaque projet que nous touchons devient un témoignage de ce qui est possible quand l'ambition rencontre l'exécution.",
+      "paragraph3": "Nos clients ne viennent pas à nous pour des solutions sûres. Ils viennent parce qu'ils sont prêts à dominer leurs marchés, perturber leurs industries et construire quelque chose qui compte.",
+      "quote": "L'excellence n'est pas un objectif—c'est le standard minimum.",
+      "cta": "Commencez Votre Transformation"
+    },
+    "founders": {
+      "label": "Qui Nous Sommes",
+      "title": "Rencontrez les Fondateurs",
+      "subtitle": "Nous sommes des explorateurs. Nous cherchons constamment des moyens d'avoir un impact à travers la technologie et l'innovation.",
+      "members": {
+        "founder-1": {
+          "name": "Andrés Santana",
+          "role": "CTO & Co-Fondateur",
+          "bio": "Développeur Frontend & Designer UX/UI spécialisé en React.js, JavaScript & Next.js. Passionné par la création d'expériences numériques exceptionnelles."
+        },
+        "founder-2": {
+          "name": "Marlon Ramirez",
+          "role": "COO & Co-Fondateur",
+          "bio": "Développeur Backend avec plus de 3 ans d'expérience, spécialisé dans la création de solutions robustes et évolutives."
+        },
+        "founder-3": {
+          "name": "Cesar Ortiz",
+          "role": "CEO & Co-Fondateur",
+          "bio": "Développeur Full Stack avec plus de 5 ans d'expérience dans la conception et la construction d'applications web évolutives."
+        }
+      }
+    },
+    "process": {
+      "label": "Notre Approche",
+      "title": "Notre Processus",
+      "subtitle": "La première étape pour résoudre un problème est de reconnaître qu'il existe.",
+      "steps": {
+        "step-1": {
+          "title": "Découverte",
+          "description": "Nous plongeons profondément dans l'ADN de votre entreprise. Comprendre vos défis, objectifs et vision est là où les solutions légendaires commencent."
+        },
+        "step-2": {
+          "title": "Stratégie",
+          "description": "Nous architecturons la feuille de route vers votre succès. Chaque décision est basée sur les données, chaque jalon est mesurable."
+        },
+        "step-3": {
+          "title": "Design",
+          "description": "Nous créons des expériences qui captivent. Un design centré utilisateur qui n'est pas seulement beau—il convertit."
+        },
+        "step-4": {
+          "title": "Développement",
+          "description": "Nous construisons avec précision et puissance. Code propre, architecture évolutive, performance à toute épreuve."
+        },
+        "step-5": {
+          "title": "Lancement & Mise à l'échelle",
+          "description": "Nous ne livrons pas simplement—nous assurons le succès. Support continu, optimisation et partenariat de croissance."
+        }
+      }
+    },
+    "values": {
+      "label": "Nos Valeurs",
+      "title": "Nos Valeurs",
+      "subtitle": "engagements",
+      "items": {
+        "value-1": {
+          "title": "Innovation Sans Relâche",
+          "tagline": "Nous n'attendons pas le futur—nous le construisons.",
+          "description": "La stagnation c'est la mort. Nous repoussons constamment les limites, explorons les technologies émergentes et défions le statu quo pour livrer des solutions qui vous donnent un avantage injuste."
+        },
+        "value-2": {
+          "title": "Qualité Sans Compromis",
+          "tagline": "\"Assez bien\" n'est pas dans notre vocabulaire.",
+          "description": "Chaque ligne de code, chaque pixel, chaque interaction est créée avec une attention obsessionnelle au détail. Nous ne livrons pas tant que ce n'est pas exceptionnel."
+        },
+        "value-3": {
+          "title": "Partenariat Stratégique",
+          "tagline": "Votre succès est notre obsession.",
+          "description": "Nous ne sommes pas des fournisseurs—nous sommes des partenaires investis dans votre croissance. Vos victoires sont nos victoires. Nous pensons à long terme et construisons des relations durables."
+        },
+        "value-4": {
+          "title": "Impact Mesurable",
+          "tagline": "Si ça ne peut pas être mesuré, ça n'est pas arrivé.",
+          "description": "Nous sommes obsédés par les résultats. Chaque projet a des KPIs clairs, chaque décision est informée par les données, et chaque résultat est quantifiable."
+        }
+      }
+    },
+    "expertise": {
+      "title": "Notre Expertise",
+      "stats": {
+        "yearsExcellence": "Années d'Excellence",
+        "projectsDelivered": "Projets Livrés",
+        "industriesTransformed": "Industries Transformées",
+        "clientSatisfaction": "Satisfaction Client"
+      }
+    },
+    "careers": {
+      "label": "Carrières",
+      "headline": "Prêt à Construire Quelque Chose de Légendaire ?",
+      "subtitle": "Nous recherchons toujours des talents exceptionnels qui refusent de se contenter de l'ordinaire.",
+      "cta": "Rejoignez la Révolution"
+    },
+    "mission": {
+      "label": "Notre Mission",
+      "title": "Transformer l'Avenir",
+      "statements": {
+        "1": "Créer des solutions logicielles alimentées par l'IA qui optimisent les processus, automatisent les opérations et aident les entreprises et les individus à prendre de meilleures décisions, transformant la technologie en un allié stratégique pour leur croissance.",
+        "2": "Piloter la transformation numérique de nos clients à travers des logiciels innovants, l'automatisation intelligente et des expériences numériques efficaces, transformant la technologie en un véritable avantage compétitif pour leurs entreprises.",
+        "3": "Créer une technologie qui simplifie la complexité, donne vie aux idées et accélère la croissance des entreprises, construisant des solutions numériques solides aujourd'hui avec un œil sur l'avenir."
+      }
+    },
+    "vision": {
+      "label": "Notre Vision",
+      "title": "Où Nous Allons",
+      "statements": {
+        "1": "Être une entreprise leader dans le développement de solutions technologiques basées sur l'IA, reconnue pour aider les entreprises à innover, se développer et rivaliser mondialement grâce à des logiciels intelligents et efficaces.",
+        "2": "Devenir un partenaire stratégique leader dans la transformation numérique, intégrant l'intelligence artificielle et le développement logiciel pour stimuler l'efficacité, l'automatisation et la croissance durable de nos clients.",
+        "3": "Construire un avenir où l'intelligence artificielle et les logiciels travaillent ensemble pour simplifier les processus, donner vie aux idées et générer un impact positif et durable sur les entreprises de toutes tailles."
+      }
+    },
+    "culture": {
+      "label": "Culture NevadaTech",
+      "title": "Comment Nous Pensons et Agissons",
+      "summary": "NevadaTech est une entreprise distancielle qui construit des logiciels et de l'intelligence artificielle avec responsabilité, données et feedback honnête, focalisée sur la génération d'un impact réel pour ses clients.",
+      "principles": {
+        "ownership": {
+          "title": "Responsabilité Totale",
+          "description": "Chez NevadaTech, tout le monde possède son travail. Nous assumons la responsabilité des résultats, pas seulement des tâches. Si quelque chose échoue, nous le corrigeons ; nous ne cherchons pas de coupables. Nous pensons comme si l'entreprise était la nôtre.",
+          "quote": "Si tu le vois, c'est le tien."
+        },
+        "remote": {
+          "title": "Entreprise 100% Distancielle",
+          "description": "Nous croyons au travail à distance comme avantage compétitif. Nous mesurons les résultats, pas les heures connectées. La communication est claire, écrite et documentée. Nous respectons le temps, les espaces et l'autonomie.",
+          "quote": "La confiance est le fondement du travail à distance."
+        },
+        "feedback": {
+          "title": "Feedback Honnête et Respectueux",
+          "description": "Le feedback direct nous rend meilleurs. Nous disons les choses à temps, avec respect et clarté. Nous préférons les conversations inconfortables aux problèmes cachés. L'objectif est toujours de s'améliorer, pas de gagner des arguments.",
+          "quote": "Honnêteté sans ego, feedback sans attaque."
+        },
+        "client": {
+          "title": "Le Client comme Source de Vérité",
+          "description": "Écouter le client fait partie du travail. Le feedback client guide les améliorations et décisions. Nous ne défendons pas les idées, nous défendons les résultats. Nous apprenons de chaque projet, même des erreurs.",
+          "quote": "La meilleure roadmap commence par l'écoute."
+        },
+        "data": {
+          "title": "Décisions Basées sur les Données",
+          "description": "Les opinions comptent, les données décident. Nous mesurons l'impact, l'utilisation et les résultats. Nous testons, analysons et ajustons. L'intuition est validée par l'information.",
+          "quote": "Sans données, ce ne sont que des suppositions."
+        },
+        "ai": {
+          "title": "L'IA comme Copilote Stratégique",
+          "description": "Nous utilisons l'intelligence artificielle pour accélérer le développement, améliorer les décisions et automatiser sans perdre le jugement humain.",
+          "quote": "L'IA amplifie le talent, elle ne le remplace pas."
+        }
+      },
+      "coreValues": {
+        "title": "Valeurs qui Nous Définissent",
+        "items": {
+          "ownership": "Responsabilité",
+          "transparency": "Transparence",
+          "excellence": "Excellence Technique",
+          "learning": "Apprentissage Continu",
+          "results": "Orienté Résultats",
+          "innovation": "Innovation Intentionnelle"
+        }
+      },
+      "clientWork": {
+        "title": "Comment Nous Travaillons avec les Clients",
+        "items": {
+          "expectations": "Attentes claires dès le départ",
+          "communication": "Communication honnête et constante",
+          "scalable": "Solutions conçues pour évoluer",
+          "support": "Support réel, pas seulement des livrables"
+        }
+      }
+    }
+  },
+  "Projects": {
+    "hero": {
+      "title": "Un bon design est joli, mais un excellent design résout un problème.",
+      "subtitle": "Voyez les problèmes que nous avons résolus"
+    },
+    "filters": {
+      "label": "Nos projets",
+      "all": "Tous",
+      "webDesign": "Design Web",
+      "branding": "Branding",
+      "uxui": "UX/UI",
+      "motionDesign": "Motion Design"
+    },
+    "detail": {
+      "about": "À propos du projet",
+      "industry": "Industrie",
+      "duration": "Durée",
+      "services": "Services",
+      "weeks": "semaines",
+      "challenges": "Défis",
+      "problem": "Problème",
+      "solution": "Solution",
+      "takeaways": "Points Clés",
+      "summary": "Résumé",
+      "relatedProjects": "Projets Connexes",
+      "explore": "Explorer",
+      "letsChat": "Discutons"
+    }
+  },
+  "Footer": {
+    "services": "Services",
+    "projects": "Projets",
+    "about": "À propos",
+    "contact": "Contact",
+    "copyright": "© 2024 Nevada Tech. Tous droits réservés."
+  }
+}
