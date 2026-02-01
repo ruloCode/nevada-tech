@@ -33,9 +33,11 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-black/80 backdrop-blur-xl border-b border-white/5"
-            : "bg-transparent"
+          isMobileMenuOpen
+            ? "bg-black"
+            : isScrolled
+              ? "bg-black/80 backdrop-blur-xl border-b border-white/5"
+              : "bg-transparent"
         }`}
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
