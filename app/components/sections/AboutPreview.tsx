@@ -29,9 +29,9 @@ const itemVariants = {
 };
 
 const expertiseStats = [
-  { id: "stat-1", value: 10, suffix: "+", labelKey: "yearsExcellence" },
+  { id: "stat-1", value: 14, suffix: "+", labelKey: "yearsExcellence" },
   { id: "stat-2", value: 50, suffix: "+", labelKey: "projectsDelivered" },
-  { id: "stat-3", value: 15, suffix: "+", labelKey: "industriesTransformed" },
+  { id: "stat-3", value: 9, suffix: "+", labelKey: "industriesTransformed" },
 ];
 
 export default function AboutPreview() {
