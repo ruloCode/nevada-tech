@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { readFile } from "node:fs/promises";
+import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
 export const alt = "Nevada Tech - Transform Ideas Into Digital Success";
@@ -7,7 +7,7 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
-  const logoData = await readFile(
+  const logoData = readFileSync(
     join(process.cwd(), "public/imagenes/logo_nevada.png")
   );
   const logoBase64 = `data:image/png;base64,${logoData.toString("base64")}`;

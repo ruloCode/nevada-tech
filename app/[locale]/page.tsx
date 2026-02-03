@@ -3,7 +3,6 @@ import Hero from "@/app/components/hero/Hero";
 import AboutPreview from "@/app/components/sections/AboutPreview";
 import Services from "@/app/components/sections/Services";
 import Portfolio from "@/app/components/sections/Portfolio";
-import Stats from "@/app/components/sections/Stats";
 import FAQ from "@/app/components/sections/FAQ";
 import CTA from "@/app/components/sections/CTA";
 
@@ -21,7 +20,6 @@ export default async function Home({ params }: HomePageProps) {
       <AboutPreview />
       <Services />
       <Portfolio />
-      <Stats />
       <FAQ />
       <CTA />
     </main>
