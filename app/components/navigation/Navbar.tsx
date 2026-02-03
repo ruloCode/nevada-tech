@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 import Button from "../ui/Button";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
 import { Link } from "@/app/i18n/navigation";
@@ -11,6 +12,10 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const t = useTranslations("Navbar");
+  const pathname = usePathname();
+  
+  // Check if we're on a project detail page (has /projects/ with a slug after category)
+  const isProjectDetail = /\/projects\/[^/]+\/[^/]+/.test(pathname);
 
   const navLinks = [
     { label: t("about"), href: "/about" },
@@ -37,7 +42,9 @@ export default function Navbar() {
             ? "bg-black"
             : isScrolled
               ? "bg-black/80 backdrop-blur-xl border-b border-white/5"
-              : "bg-black/80 backdrop-blur-xl"
+              : isProjectDetail
+                ? "bg-black/80 backdrop-blur-xl"
+                : "bg-transparent"
         }`}
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
