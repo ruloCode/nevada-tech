@@ -24,393 +24,155 @@
 
 ---
 
-## PRIORIDAD 1: PORTFOLIO CARDS (6 imágenes)
+## PRIORIDAD 1: PORTFOLIO CARDS (4 imágenes)
 
 > Estas son las imágenes más visibles del sitio - aparecen en el carrusel del homepage.
 > **Dimensiones:** 420x315px (ratio 4:3)
-> **Formato:** WebP con fallback JPG
+> **Formato:** PNG / WebP
 
 ---
 
-### 1.1 TechVision - Fintech Platform
+### 1.1 Bambu Coliving - Coliving / Espacios Compartidos
 
-**Archivo:** `portfolio-techvision.webp`
+**Archivo:** `portfolio-bambu-coliving.png`
 **Dimensiones:** 1680x1260px (4x para retina)
 **Ratio:** 4:3
 
 ```
-PROMPT ESPAÑOL:
-Mockup profesional de aplicación fintech en laptop MacBook Pro y iPhone,
-interfaz moderna con gráficos financieros en tiempo real, dashboard bancario
-elegante con tonos púrpura y violeta (#667eea a #764ba2), ambiente de oficina
-ejecutiva moderna con luz natural suave, planta decorativa desenfocada en
-primer plano, mesa de mármol blanco, fotografía comercial de alta gama,
-estilo editorial, 8K, renderizado fotorrealista, profundidad de campo
-cinematográfica, iluminación volumétrica suave
-
-PROMPT INGLÉS (para Midjourney):
-Professional fintech app mockup on MacBook Pro and iPhone, modern interface
-with real-time financial charts, elegant banking dashboard with purple and
-violet tones (#667eea to #764ba2), modern executive office environment with
-soft natural light, decorative plant blurred in foreground, white marble desk,
-high-end commercial photography, editorial style, 8K, photorealistic render,
-cinematic depth of field, soft volumetric lighting --ar 4:3 --v 6.1 --style raw
+PROMPT:
+Espacio de coliving moderno y acogedor en Bogota, sala compartida con
+nomadas digitales trabajando en laptops, decoracion con plantas de bambu
+y madera natural, grandes ventanales con vista urbana, paleta verde
+fresco (#4ade80 a #166534), cocina comunal al fondo, ambiente de
+comunidad y productividad, iluminacion natural calida, fotografia
+editorial, 8K
 ```
 
 **Elementos clave:**
-- Dashboard financiero con gráficos de líneas y barras
-- Interfaz en español: "Tus finanzas", "Balance total", "Inversiones"
-- Colores: gradiente púrpura (#667eea → #764ba2)
-- Dispositivos: MacBook + iPhone en composición elegante
+- Espacio de coliving con comunidad activa
+- Plantas de bambú y madera natural
+- Colores: gradiente verde (#4ade80 → #166534 → #a3e635)
+- Ambiente de comunidad y productividad
 
 ---
 
-### 1.2 Quantum Labs - AI & Technology
+### 1.2 VR Experience - Inmersión 360°
 
-**Archivo:** `portfolio-quantum-labs.webp`
+> Imágenes ya generadas: `portfolio-vr-experience.png`, `project-hero-vr-experience.png`
+
+---
+
+### 1.3 ToPra - Productividad con IA
+
+**Archivo:** `portfolio-topra.png`
 **Dimensiones:** 1680x1260px (4x para retina)
 **Ratio:** 4:3
 
 ```
-PROMPT ESPAÑOL:
-Visualización futurista de inteligencia artificial y aprendizaje automático,
-red neuronal holográfica brillante en tonos verde esmeralda y turquesa
-(#11998e a #38ef7d), partículas de datos flotantes, ambiente de laboratorio
-de alta tecnología con iluminación neón sutil, científico de datos
-latinoamericano trabajando en pantalla holográfica, estética cyberpunk
-premium, renderizado 3D fotorrealista, iluminación de estudio, composición
-cinematográfica, 8K ultra detallado
-
-PROMPT INGLÉS (para Midjourney):
-Futuristic artificial intelligence and machine learning visualization,
-glowing holographic neural network in emerald green and turquoise tones
-(#11998e to #38ef7d), floating data particles, high-tech laboratory
-environment with subtle neon lighting, Latin American data scientist working
-on holographic screen, premium cyberpunk aesthetic, photorealistic 3D render,
-studio lighting, cinematic composition, 8K ultra detailed --ar 4:3 --v 6.1 --style raw
+PROMPT:
+A minimalist productivity app mockup on MacBook Pro and iPhone, clean task
+management interface with AI coaching assistant sidebar, modern emerald green
+and teal gradient (#10b981 to #0d9488), organized workspace with ambient
+lighting, professional commercial photography style, dark background, 4:3
+ratio, 8K quality
 ```
 
 **Elementos clave:**
-- Red neuronal/AI visual abstracta pero reconocible
-- Colores: gradiente verde esmeralda (#11998e → #38ef7d)
-- Ambiente futurista pero profesional
-- Elementos de datos/código flotantes
+- App de productividad minimalista con coach IA
+- Colores: gradiente esmeralda-teal (#10b981 → #0d9488)
+- Interfaz limpia de gestión de tareas
+- Dispositivos: MacBook + iPhone
 
 ---
 
-### 1.3 MedConnect - Healthcare Platform
+### 1.4 FZ Academia - Educación Musical
 
-**Archivo:** `portfolio-medconnect.webp`
+**Archivo:** `portfolio-fz-academia.png`
 **Dimensiones:** 1680x1260px (4x para retina)
 **Ratio:** 4:3
 
 ```
-PROMPT ESPAÑOL:
-Doctora latina profesional sonriente usando tablet con aplicación médica
-moderna, interfaz de telemedicina con calendario de citas y perfiles de
-pacientes, colores cálidos rosa coral y naranja (#ee0979 a #ff6a00),
-consultorio médico moderno y luminoso, plantas naturales, ventanales
-grandes con luz natural, fotografía de salud corporativa, expresión
-empática y profesional, estilo editorial de revista médica, 8K,
-iluminación suave y acogedora
-
-PROMPT INGLÉS (para Midjourney):
-Professional smiling Latina female doctor using tablet with modern medical
-app, telemedicine interface with appointment calendar and patient profiles,
-warm coral pink and orange colors (#ee0979 to #ff6a00), modern bright
-medical office, natural plants, large windows with natural light, corporate
-healthcare photography, empathetic and professional expression, medical
-magazine editorial style, 8K, soft welcoming lighting --ar 4:3 --v 6.1 --style raw
+PROMPT:
+Online music education platform mockup on laptop and tablet, e-learning
+interface showing video lessons with musical instruments (guitar, piano),
+warm amber and orange gradient (#f59e0b to #b45309), modern studio
+environment, professional photography, 4:3 ratio, 8K quality
 ```
 
 **Elementos clave:**
-- Profesional de salud latina (doctora/enfermera)
-- App médica visible en tablet
-- Colores: gradiente rosa-naranja (#ee0979 → #ff6a00)
-- Ambiente médico moderno, cálido y humano
+- Plataforma de educación musical online
+- Colores: gradiente ámbar-naranja (#f59e0b → #b45309)
+- Instrumentos musicales y video lessons
+- Dispositivos: laptop + tablet
 
 ---
 
-### 1.4 Velocity - SaaS Platform
-
-**Archivo:** `portfolio-velocity.webp`
-**Dimensiones:** 1680x1260px (4x para retina)
-**Ratio:** 4:3
-
-```
-PROMPT ESPAÑOL:
-Dashboard de productividad SaaS en pantalla ultrawide curva, interfaz
-moderna con widgets de analytics, gestión de proyectos y métricas de
-rendimiento, colores vibrantes rosa y fucsia (#f093fb a #f5576c),
-escritorio de startup moderna con setup de trabajo híbrido, accesorios
-tech premium, taza de café artesanal, auriculares inalámbricos,
-ambiente dinámico y energético, fotografía de producto lifestyle,
-8K, iluminación RGB ambiental sutil
-
-PROMPT INGLÉS (para Midjourney):
-SaaS productivity dashboard on curved ultrawide monitor, modern interface
-with analytics widgets, project management and performance metrics, vibrant
-pink and fuchsia colors (#f093fb to #f5576c), modern startup desk with
-hybrid work setup, premium tech accessories, artisan coffee cup, wireless
-headphones, dynamic energetic environment, lifestyle product photography,
-8K, subtle ambient RGB lighting --ar 4:3 --v 6.1 --style raw
-```
-
-**Elementos clave:**
-- Dashboard SaaS completo y moderno
-- Setup de trabajo premium/startup
-- Colores: gradiente rosa-fucsia (#f093fb → #f5576c)
-- Vibes de productividad y dinamismo
-
----
-
-### 1.5 CryptoFlow - Web3 & Crypto
-
-**Archivo:** `portfolio-cryptoflow.webp`
-**Dimensiones:** 1680x1260px (4x para retina)
-**Ratio:** 4:3
-
-```
-PROMPT ESPAÑOL:
-Plataforma de trading de criptomonedas en múltiples pantallas, interfaz
-Web3 con wallet conectada, gráficos de mercado en tiempo real con
-candelabros verdes, NFT gallery en sidebar, colores azul eléctrico y
-cyan brillante (#4facfe a #00f2fe), ambiente de trading room moderno,
-múltiples monitores con datos de blockchain, iluminación neón azul
-ambiental, estética tech futurista pero accesible, fotografía
-comercial de alta gama, 8K, composición dinámica
-
-PROMPT INGLÉS (para Midjourney):
-Cryptocurrency trading platform on multiple screens, Web3 interface with
-connected wallet, real-time market charts with green candlesticks, NFT
-gallery in sidebar, electric blue and bright cyan colors (#4facfe to
-#00f2fe), modern trading room environment, multiple monitors with
-blockchain data, ambient blue neon lighting, futuristic yet accessible
-tech aesthetic, high-end commercial photography, 8K, dynamic composition
---ar 4:3 --v 6.1 --style raw
-```
-
-**Elementos clave:**
-- Interfaz crypto/Web3 profesional
-- Múltiples pantallas con datos de mercado
-- Colores: gradiente azul-cyan (#4facfe → #00f2fe)
-- Estética futurista pero profesional
-
----
-
-### 1.6 Artisan - Creative Agency
-
-**Archivo:** `portfolio-artisan.webp`
-**Dimensiones:** 1680x1260px (4x para retina)
-**Ratio:** 4:3
-
-```
-PROMPT ESPAÑOL:
-Estudio de diseño creativo con iMac mostrando software de motion design
-y animación, timeline de video visible, paleta de colores vibrante rosa
-y amarillo (#fa709a a #fee140), pared de inspiración con prints y
-moodboards, materiales de arte y tableta gráfica Wacom, diseñador
-creativo latino trabajando, ambiente artístico bohemio pero profesional,
-plantas tropicales, luz natural dramática, fotografía editorial de
-estilo de vida creativo, 8K
-
-PROMPT INGLÉS (para Midjourney):
-Creative design studio with iMac showing motion design and animation
-software, visible video timeline, vibrant pink and yellow color palette
-(#fa709a to #fee140), inspiration wall with prints and moodboards, art
-materials and Wacom graphics tablet, Latino creative designer working,
-bohemian yet professional artistic environment, tropical plants, dramatic
-natural light, creative lifestyle editorial photography, 8K
---ar 4:3 --v 6.1 --style raw
-```
-
-**Elementos clave:**
-- Ambiente de estudio creativo/agencia
-- Software de diseño/motion visible
-- Colores: gradiente rosa-amarillo (#fa709a → #fee140)
-- Vibes artísticos y creativos
-
----
-
-## PRIORIDAD 2: PROJECT DETAIL HEROES (6 imágenes)
+## PRIORIDAD 2: PROJECT DETAIL HEROES (4 imágenes)
 
 > Imagen principal de cada página de proyecto.
 > **Dimensiones:** 1800x1125px (ratio 16:10)
-> **Formato:** WebP con fallback JPG
+> **Formato:** PNG / WebP
 
 ---
 
-### 2.1 TechVision Hero
+### 2.1 Bambu Coliving Hero
 
-**Archivo:** `project-hero-techvision.webp`
+**Archivo:** `project-hero-bambu-coliving.png`
 **Dimensiones:** 3600x2250px (2x para retina)
 **Ratio:** 16:10
 
 ```
-PROMPT ESPAÑOL:
-Composición épica de plataforma fintech TechVision, múltiples dispositivos
-flotando en espacio 3D oscuro, laptop con dashboard financiero, smartphone
-con app bancaria, smartwatch con notificaciones, tarjetas de crédito
-holográficas flotantes, interfaz en español "Bienvenido a TechVision"
-"Tu dinero, tu control", gradiente púrpura intenso de fondo (#667eea a
-#764ba2), partículas brillantes, efecto de profundidad dramático,
-renderizado 3D cinematográfico, iluminación volumétrica, estilo Apple
-keynote, 8K ultra detallado
-
-PROMPT INGLÉS:
-Epic TechVision fintech platform composition, multiple devices floating
-in dark 3D space, laptop with financial dashboard, smartphone with banking
-app, smartwatch with notifications, holographic floating credit cards,
-Spanish interface "Bienvenido a TechVision" "Tu dinero, tu control",
-intense purple background gradient (#667eea to #764ba2), glowing particles,
-dramatic depth effect, cinematic 3D render, volumetric lighting, Apple
-keynote style, 8K ultra detailed --ar 16:10 --v 6.1 --style raw
+PROMPT:
+Composicion panoramica del sitio web de Bambu Coliving, mockup de
+interfaz web con recorridos de espacios compartidos, calendario de
+eventos, perfiles de comunidad, tonos verdes bambu (#4ade80 a #166534
+a #a3e635), hojas de bambu flotando, fondo oscuro con destellos
+naturales, UI moderno glassmorphism, render 8K
 ```
 
 ---
 
-### 2.2 Quantum Labs Hero
+### 2.2 VR Experience Hero
 
-**Archivo:** `project-hero-quantum-labs.webp`
+> Imágenes ya generadas: `project-hero-vr-experience.png`
+
+---
+
+### 2.3 ToPra Hero
+
+**Archivo:** `project-hero-topra.png`
 **Dimensiones:** 3600x2250px (2x para retina)
 **Ratio:** 16:10
 
 ```
-PROMPT ESPAÑOL:
-Visualización abstracta de inteligencia artificial Quantum Labs, cerebro
-digital formado por conexiones neuronales brillantes, núcleo central de
-energía verde esmeralda (#11998e), ondas de datos expandiéndose,
-partículas de código binario flotantes, texto holográfico "Quantum Labs"
-"El futuro de la IA", fondo negro profundo con destellos esmeralda y
-turquesa (#38ef7d), estética científica futurista, renderizado 3D
-hiperrealista, iluminación de neón suave, composición simétrica,
-8K cinematográfico
-
-PROMPT INGLÉS:
-Quantum Labs artificial intelligence abstract visualization, digital
-brain formed by glowing neural connections, emerald green energy core
-(#11998e), expanding data waves, floating binary code particles,
-holographic text "Quantum Labs" "El futuro de la IA", deep black
-background with emerald and turquoise sparkles (#38ef7d), futuristic
-scientific aesthetic, hyperrealistic 3D render, soft neon lighting,
-symmetrical composition, 8K cinematic --ar 16:10 --v 6.1 --style raw
+PROMPT:
+Panoramic view of ToPra productivity app, AI coaching interface with task
+prioritization, clean minimal dashboard with focus timer and smart
+suggestions, emerald green and teal gradient (#10b981 to #0d9488), dark
+background with soft glow effects, floating productivity icons, modern
+UI design with glassmorphism, 8K interface render --ar 16:10 --style raw
 ```
 
 ---
 
-### 2.3 MedConnect Hero
+### 2.4 FZ Academia Hero
 
-**Archivo:** `project-hero-medconnect.webp`
+**Archivo:** `project-hero-fz-academia.png`
 **Dimensiones:** 3600x2250px (2x para retina)
 **Ratio:** 16:10
 
 ```
-PROMPT ESPAÑOL:
-Escena emocional de telemedicina MedConnect, paciente mayor sonriente
-en videollamada con doctor en pantalla de tablet, ambiente hogareño
-cálido y acogedor, interfaz de app visible con botón "Conectar con
-tu doctor", colores cálidos rosa coral y naranja suave (#ee0979 fading
-to #ff6a00), luz natural de ventana, expresiones genuinas de conexión
-humana, elementos médicos sutiles (estetoscopio, recetas), fotografía
-documental emotiva, 8K, profundidad de campo cinematográfica
-
-PROMPT INGLÉS:
-Emotional MedConnect telemedicine scene, smiling elderly patient in
-video call with doctor on tablet screen, warm cozy home environment,
-visible app interface with "Conectar con tu doctor" button, warm coral
-pink and soft orange colors (#ee0979 fading to #ff6a00), natural window
-light, genuine expressions of human connection, subtle medical elements
-(stethoscope, prescriptions), emotive documentary photography, 8K,
-cinematic depth of field --ar 16:10 --v 6.1 --style raw
+PROMPT:
+Panoramic view of FZ Academia music education platform, video lesson player
+with guitar instructor, course progress sidebar, interactive music notation,
+warm amber and orange gradient (#f59e0b to #b45309), dark background with
+musical notes floating, e-learning dashboard with student progress charts,
+premium UI design, 8K interface render --ar 16:10 --style raw
 ```
 
 ---
 
-### 2.4 Velocity Hero
-
-**Archivo:** `project-hero-velocity.webp`
-**Dimensiones:** 3600x2250px (2x para retina)
-**Ratio:** 16:10
-
-```
-PROMPT ESPAÑOL:
-Dashboard panorámico de Velocity SaaS, vista de control de misión con
-múltiples widgets de productividad, gráficos de rendimiento de equipo,
-timeline de proyecto con tareas completadas, interfaz en español
-"Velocity - Acelera tu productividad", colores vibrantes rosa y fucsia
-(#f093fb a #f5576c), fondo oscuro con gradiente sutil, elementos 3D
-flotantes como iconos de notificación, efecto glassmorphism en cards,
-diseño UI premium, renderizado de interfaz 8K, iluminación de producto
-
-PROMPT INGLÉS:
-Panoramic Velocity SaaS dashboard, mission control view with multiple
-productivity widgets, team performance charts, project timeline with
-completed tasks, Spanish interface "Velocity - Acelera tu productividad",
-vibrant pink and fuchsia colors (#f093fb to #f5576c), dark background
-with subtle gradient, floating 3D elements like notification icons,
-glassmorphism effect on cards, premium UI design, 8K interface render,
-product lighting --ar 16:10 --v 6.1 --style raw
-```
-
----
-
-### 2.5 CryptoFlow Hero
-
-**Archivo:** `project-hero-cryptoflow.webp`
-**Dimensiones:** 3600x2250px (2x para retina)
-**Ratio:** 16:10
-
-```
-PROMPT ESPAÑOL:
-Ecosistema CryptoFlow Web3 visualizado, wallet cripto central con
-balance en múltiples monedas, NFTs coleccionables girando alrededor,
-gráfico de Bitcoin/Ethereum en alza, iconos de blockchain conectados
-por líneas de energía, interfaz "CryptoFlow - Tu puerta al Web3",
-colores azul eléctrico y cyan brillante (#4facfe a #00f2fe), fondo
-negro espacial con estrellas sutiles, partículas de datos flotantes,
-estética futurista premium, renderizado 3D holográfico, 8K ultra HD
-
-PROMPT INGLÉS:
-CryptoFlow Web3 ecosystem visualized, central crypto wallet with
-multi-coin balance, collectible NFTs spinning around, rising Bitcoin/
-Ethereum chart, blockchain icons connected by energy lines, interface
-"CryptoFlow - Tu puerta al Web3", electric blue and bright cyan colors
-(#4facfe to #00f2fe), space black background with subtle stars, floating
-data particles, premium futuristic aesthetic, holographic 3D render,
-8K ultra HD --ar 16:10 --v 6.1 --style raw
-```
-
----
-
-### 2.6 Artisan Hero
-
-**Archivo:** `project-hero-artisan.webp`
-**Dimensiones:** 3600x2250px (2x para retina)
-**Ratio:** 16:10
-
-```
-PROMPT ESPAÑOL:
-Explosión creativa de Artisan agency, composición dinámica con elementos
-de motion design volando, formas abstractas líquidas en rosa y amarillo
-(#fa709a a #fee140), tipografía 3D "Artisan" emergiendo del centro,
-pinceles digitales dejando trazos de color, partículas de creatividad,
-paleta de diseñador flotante, frame de video con timeline visible,
-energía artística pura, renderizado 3D expresivo y dinámico, iluminación
-de estudio creativo, composición explosiva desde el centro, 8K vibrante
-
-PROMPT INGLÉS:
-Artisan agency creative explosion, dynamic composition with flying motion
-design elements, liquid abstract shapes in pink and yellow (#fa709a to
-#fee140), 3D typography "Artisan" emerging from center, digital brushes
-leaving color trails, creativity particles, floating designer palette,
-video frame with visible timeline, pure artistic energy, expressive
-dynamic 3D render, creative studio lighting, explosive composition from
-center, 8K vibrant --ar 16:10 --v 6.1 --style raw
-```
-
----
-
-## PRIORIDAD 3: PROJECT GALLERIES (24 imágenes)
+## PRIORIDAD 3: PROJECT GALLERIES (16 imágenes)
 
 > 4 imágenes por proyecto mostrando diferentes aspectos del trabajo.
 > **Dimensiones:** 1440x900px (ratio 16:10)
@@ -418,284 +180,137 @@ center, 8K vibrant --ar 16:10 --v 6.1 --style raw
 
 ---
 
-### 3.1 TechVision Gallery (4 imágenes)
+### 3.1 Bambu Coliving Gallery (4 imágenes)
 
-#### TechVision Gallery 1 - Mobile App
-**Archivo:** `gallery-techvision-1.webp`
+#### Bambu Coliving Gallery 1 - Espacios Comunes
+**Archivo:** `gallery-bambu-coliving-1.webp`
 ```
 PROMPT:
-Mockup de app móvil TechVision en iPhone 15 Pro, mano de mujer profesional
-sosteniendo el teléfono, pantalla mostrando dashboard de inversiones con
-gráfico de portafolio en español "Mi Portafolio +12.5%", interfaz púrpura
-elegante, fondo desenfocado de oficina moderna, fotografía de producto
-lifestyle, 8K, iluminación natural suave --ar 16:10 --v 6.1
+Sala de coworking de Bambu Coliving, escritorios compartidos con nomadas
+digitales trabajando, plantas de bambu, iluminacion natural, pizarras con
+ideas, cafe y comunidad, tonos verdes (#4ade80 #166534), fotografia
+editorial de espacio de trabajo, 8K --ar 16:10
 ```
 
-#### TechVision Gallery 2 - Web Dashboard
-**Archivo:** `gallery-techvision-2.webp`
+#### Bambu Coliving Gallery 2 - Habitaciones
+**Archivo:** `gallery-bambu-coliving-2.webp`
 ```
 PROMPT:
-Captura completa de dashboard web TechVision en MacBook Pro, vista de
-gestión de cuentas bancarias múltiples, transferencias recientes,
-notificaciones de pagos, sidebar con navegación, interfaz en español
-"Tus Cuentas" "Transferir" "Historial", diseño UI moderno púrpura,
-ambiente de escritorio minimalista, 8K render de interfaz --ar 16:10 --v 6.1
+Habitacion privada de Bambu Coliving, cama queen con ropa de cama blanca,
+escritorio de trabajo con monitor, decoracion minimalista con bambu y madera,
+ventanal con vista a Bogota, paleta verde y natural, fotografia de interiorismo,
+8K --ar 16:10
 ```
 
-#### TechVision Gallery 3 - Cards & Payments
-**Archivo:** `gallery-techvision-3.webp`
+#### Bambu Coliving Gallery 3 - Comunidad
+**Archivo:** `gallery-bambu-coliving-3.webp`
 ```
 PROMPT:
-Tarjetas bancarias TechVision premium en composición de producto, tarjeta
-física púrpura degradado con chip dorado, versión virtual en pantalla de
-móvil, efectos holográficos sutiles, superficie reflectante oscura,
-iluminación de estudio premium, fotografía de producto de lujo, 8K
---ar 16:10 --v 6.1
+Evento comunitario en Bambu Coliving, grupo diverso de jovenes profesionales
+en terraza con vista urbana, noche de networking, luces decorativas,
+plantas tropicales, ambiente social y profesional, tonos verdes calidos,
+fotografia lifestyle, 8K --ar 16:10
 ```
 
-#### TechVision Gallery 4 - Analytics
-**Archivo:** `gallery-techvision-4.webp`
+#### Bambu Coliving Gallery 4 - Web Interface
+**Archivo:** `gallery-bambu-coliving-4.webp`
 ```
 PROMPT:
-Panel de analytics financiero TechVision, gráficos interactivos de gastos
-por categoría, proyecciones de ahorro, metas financieras con progreso,
-interfaz en español "Tus Metas" "Gastos del Mes" "Proyección Anual",
-visualización de datos elegante en púrpura, diseño dashboard premium,
-8K UI render --ar 16:10 --v 6.1
+Mockup del sitio web de Bambu Coliving en MacBook y iPhone, interfaz de
+reserva de habitaciones, galeria de espacios, calendario de eventos,
+testimonios de miembros, paleta verde bambu (#4ade80 a #166534), UI moderno,
+fondo oscuro, 8K --ar 16:10
 ```
 
 ---
 
-### 3.2 Quantum Labs Gallery (4 imágenes)
+### 3.2 VR Experience Gallery (4 imágenes)
 
-#### Quantum Labs Gallery 1 - AI Dashboard
-**Archivo:** `gallery-quantum-1.webp`
+> Imágenes pendientes de generar.
+
+---
+
+### 3.3 ToPra Gallery (4 imágenes)
+
+#### ToPra Gallery 1 - Task Dashboard
+**Archivo:** `gallery-topra-1.webp`
 ```
 PROMPT:
-Interfaz de control de Quantum Labs AI, panel de entrenamiento de modelos
-de machine learning, métricas de precisión en tiempo real, gráficos de
-loss/accuracy, terminal de código Python visible, colores verde esmeralda
-(#11998e), interfaz científica en español "Modelo en Entrenamiento"
-"Precisión: 94.7%", diseño tech premium, 8K --ar 16:10 --v 6.1
+ToPra task management dashboard, Kanban board with AI-suggested priorities,
+focus timer widget, daily goals progress bar, emerald green and teal accents
+(#10b981), clean minimal interface, dark mode, 8K UI render --ar 16:10
 ```
 
-#### Quantum Labs Gallery 2 - Data Visualization
-**Archivo:** `gallery-quantum-2.webp`
+#### ToPra Gallery 2 - AI Coach
+**Archivo:** `gallery-topra-2.webp`
 ```
 PROMPT:
-Visualización de datos 3D de Quantum Labs, red neuronal interactiva
-girando en espacio 3D, nodos conectados por líneas de energía verde,
-datos fluyendo entre capas, fondo negro profundo, partículas brillantes,
-estética de sala de control científico, renderizado volumétrico, 8K
---ar 16:10 --v 6.1
+ToPra AI coaching interface, chat-style assistant providing productivity
+tips, contextual task suggestions, weekly productivity report card,
+emerald green accent (#10b981), modern conversational UI, dark background,
+8K render --ar 16:10
 ```
 
-#### Quantum Labs Gallery 3 - Mobile Monitoring
-**Archivo:** `gallery-quantum-3.webp`
+#### ToPra Gallery 3 - Mobile App
+**Archivo:** `gallery-topra-3.webp`
 ```
 PROMPT:
-App móvil de monitoreo Quantum Labs en smartphone, alertas de modelos
-AI en tiempo real, gráficos de rendimiento compactos, notificaciones
-push de entrenamientos completados, interfaz en español "Tus Modelos"
-"Alertas" "Rendimiento", diseño oscuro con acentos verde esmeralda,
-mano de científico de datos sosteniendo teléfono, 8K --ar 16:10 --v 6.1
+ToPra mobile app on iPhone, quick-add task interface, daily focus view,
+notification of AI suggestions, minimal emerald green design (#10b981),
+hand holding phone in modern workspace, lifestyle photography, 8K
+--ar 16:10
 ```
 
-#### Quantum Labs Gallery 4 - Team Collaboration
-**Archivo:** `gallery-quantum-4.webp`
+#### ToPra Gallery 4 - Analytics
+**Archivo:** `gallery-topra-4.webp`
 ```
 PROMPT:
-Equipo de data science de Quantum Labs colaborando, sala de reuniones
-moderna con pantalla grande mostrando visualizaciones de datos,
-profesionales diversos discutiendo resultados, laptops abiertas con
-código, ambiente tech startup premium, luz natural, fotografía
-corporativa moderna, 8K --ar 16:10 --v 6.1
+ToPra productivity analytics dashboard, weekly completion trends, focus
+time heatmap, AI insights panel, goal achievement metrics, emerald green
+and teal gradient, data visualization, 8K UI render --ar 16:10
 ```
 
 ---
 
-### 3.3 MedConnect Gallery (4 imágenes)
+### 3.4 FZ Academia Gallery (4 imágenes)
 
-#### MedConnect Gallery 1 - Doctor Interface
-**Archivo:** `gallery-medconnect-1.webp`
+#### FZ Academia Gallery 1 - Course Player
+**Archivo:** `gallery-fz-academia-1.webp`
 ```
 PROMPT:
-Interfaz de doctor MedConnect en tablet, lista de citas del día,
-perfiles de pacientes con historial médico, botón de videollamada
-"Iniciar Consulta", colores cálidos rosa coral, doctora latina
-revisando la pantalla en consultorio moderno, fotografía médica
-profesional, 8K --ar 16:10 --v 6.1
+FZ Academia video lesson player, guitar instructor teaching on screen,
+interactive music notation below video, progress bar with chapter markers,
+warm amber and orange accents (#f59e0b), immersive learning interface,
+8K UI render --ar 16:10
 ```
 
-#### MedConnect Gallery 2 - Patient App
-**Archivo:** `gallery-medconnect-2.webp`
+#### FZ Academia Gallery 2 - Course Catalog
+**Archivo:** `gallery-fz-academia-2.webp`
 ```
 PROMPT:
-App de paciente MedConnect en iPhone, pantalla de agendar cita con
-calendario, selección de especialidad médica, perfil de doctor con
-rating, interfaz en español "Agenda tu Cita" "Especialidades"
-"Mis Doctores", diseño amigable rosa y naranja, mockup lifestyle
-con mano sosteniendo teléfono, 8K --ar 16:10 --v 6.1
+FZ Academia course catalog, grid of music courses with thumbnails,
+instructor profiles, difficulty levels, ratings and student count,
+warm amber orange design (#f59e0b to #b45309), modern e-learning
+marketplace, 8K render --ar 16:10
 ```
 
-#### MedConnect Gallery 3 - Video Consultation
-**Archivo:** `gallery-medconnect-3.webp`
+#### FZ Academia Gallery 3 - Student Progress
+**Archivo:** `gallery-fz-academia-3.webp`
 ```
 PROMPT:
-Sesión de telemedicina MedConnect activa, laptop mostrando videollamada
-con doctor, chat de texto lateral, opción de compartir resultados de
-laboratorio, interfaz cálida y profesional en español "Dr. García en
-línea" "Enviar archivo", ambiente hogareño cómodo, paciente relajado,
-fotografía documental de salud, 8K --ar 16:10 --v 6.1
+FZ Academia student progress dashboard, practice streak calendar,
+skill tree with unlocked achievements, instrument proficiency meters,
+warm amber accents, gamified learning interface, 8K UI render --ar 16:10
 ```
 
-#### MedConnect Gallery 4 - Health Records
-**Archivo:** `gallery-medconnect-4.webp`
+#### FZ Academia Gallery 4 - Live Session
+**Archivo:** `gallery-fz-academia-4.webp`
 ```
 PROMPT:
-Dashboard de expediente médico MedConnect, historial de consultas,
-recetas digitales, resultados de laboratorio con gráficos de tendencia,
-vacunas y recordatorios, interfaz en español "Mi Historial" "Recetas"
-"Laboratorios", diseño limpio y organizado rosa coral, iconografía
-médica, 8K UI render --ar 16:10 --v 6.1
-```
-
----
-
-### 3.4 Velocity Gallery (4 imágenes)
-
-#### Velocity Gallery 1 - Project Management
-**Archivo:** `gallery-velocity-1.webp`
-```
-PROMPT:
-Vista de gestión de proyectos Velocity, tablero Kanban con tareas
-arrastrables, columnas "Por hacer" "En progreso" "Completado",
-tarjetas con avatares de equipo y fechas límite, colores rosa fucsia
-vibrantes, barra de progreso de sprint, interfaz moderna en español,
-8K UI render --ar 16:10 --v 6.1
-```
-
-#### Velocity Gallery 2 - Team Analytics
-**Archivo:** `gallery-velocity-2.webp`
-```
-PROMPT:
-Panel de analytics de equipo Velocity, gráficos de productividad por
-miembro, métricas de tiempo en tareas, leaderboard de completados,
-heat map de actividad semanal, colores rosa y fucsia (#f093fb),
-interfaz en español "Rendimiento del Equipo" "Esta Semana", diseño
-dashboard moderno, 8K --ar 16:10 --v 6.1
-```
-
-#### Velocity Gallery 3 - Mobile App
-**Archivo:** `gallery-velocity-3.webp`
-```
-PROMPT:
-App móvil Velocity en smartphone, lista de tareas personal con
-checkboxes, notificaciones de menciones, vista rápida de proyectos,
-interfaz en español "Mis Tareas" "Menciones" "Proyectos", diseño
-compacto rosa fucsia, mano profesional sosteniendo teléfono en
-ambiente de coworking, 8K --ar 16:10 --v 6.1
-```
-
-#### Velocity Gallery 4 - Integrations
-**Archivo:** `gallery-velocity-4.webp`
-```
-PROMPT:
-Panel de integraciones Velocity, conexiones con Slack, Google Drive,
-Figma, GitHub visibles como tarjetas conectadas, flujos de trabajo
-automatizados visualizados, interfaz en español "Integraciones"
-"Automatizaciones", diseño moderno con iconos de apps, fondo rosa
-degradado, 8K UI render --ar 16:10 --v 6.1
-```
-
----
-
-### 3.5 CryptoFlow Gallery (4 imágenes)
-
-#### CryptoFlow Gallery 1 - Wallet
-**Archivo:** `gallery-cryptoflow-1.webp`
-```
-PROMPT:
-Wallet principal CryptoFlow, balance total en USD y crypto, lista de
-activos con Bitcoin, Ethereum, Solana mostrando cambio 24h, botones
-"Enviar" "Recibir" "Swap", colores azul cyan brillante (#4facfe),
-interfaz en español "Tu Wallet" "Balance Total", diseño Web3 premium,
-8K --ar 16:10 --v 6.1
-```
-
-#### CryptoFlow Gallery 2 - Trading
-**Archivo:** `gallery-cryptoflow-2.webp`
-```
-PROMPT:
-Interfaz de trading CryptoFlow, gráfico de velas profesional BTC/USDT,
-order book lateral, formulario de compra/venta, indicadores técnicos
-RSI y MACD, colores azul neón sobre fondo oscuro, interfaz en español
-"Comprar" "Vender" "Mercado", diseño trader profesional, 8K
---ar 16:10 --v 6.1
-```
-
-#### CryptoFlow Gallery 3 - NFT Gallery
-**Archivo:** `gallery-cryptoflow-3.webp`
-```
-PROMPT:
-Galería de NFTs CryptoFlow, colección personal con artworks visuales,
-grid de NFTs con precios en ETH, filtros por colección, botón "Listar
-para venta", colores azul cyan vibrante, interfaz en español "Mis NFTs"
-"Colecciones", diseño Web3 moderno y limpio, 8K --ar 16:10 --v 6.1
-```
-
-#### CryptoFlow Gallery 4 - DeFi Staking
-**Archivo:** `gallery-cryptoflow-4.webp`
-```
-PROMPT:
-Panel de staking DeFi CryptoFlow, pools de liquidez con APY porcentajes,
-tus posiciones activas con recompensas acumuladas, gráfico de ganancias,
-interfaz en español "Staking" "APY 12.5%" "Recompensas", colores azul
-eléctrico, iconos de blockchain, diseño DeFi premium, 8K --ar 16:10 --v 6.1
-```
-
----
-
-### 3.6 Artisan Gallery (4 imágenes)
-
-#### Artisan Gallery 1 - Motion Reel
-**Archivo:** `gallery-artisan-1.webp`
-```
-PROMPT:
-Frame de demo reel de Artisan, composición de motion graphics con texto
-animado, formas geométricas fluidas en rosa y amarillo (#fa709a #fee140),
-timeline de After Effects visible en parte inferior, contador de frames,
-estética de producción premium, 8K render cinematográfico --ar 16:10 --v 6.1
-```
-
-#### Artisan Gallery 2 - Brand Identity
-**Archivo:** `gallery-artisan-2.webp`
-```
-PROMPT:
-Presentación de identidad de marca Artisan, mockups de papelería
-corporativa, tarjetas de visita, letterhead, logo en diferentes
-aplicaciones, paleta de colores rosa y amarillo, guía de estilo visual,
-composición flat lay de diseño, fotografía de branding, 8K --ar 16:10 --v 6.1
-```
-
-#### Artisan Gallery 3 - Design Process
-**Archivo:** `gallery-artisan-3.webp`
-```
-PROMPT:
-Proceso creativo de Artisan, escritorio de diseñador con sketch books,
-iPad con bocetos digitales, iMac con Figma abierto, materiales de arte
-organizados, post-its con ideas, ambiente de estudio creativo iluminado,
-fotografía lifestyle de diseñador, 8K --ar 16:10 --v 6.1
-```
-
-#### Artisan Gallery 4 - Client Work
-**Archivo:** `gallery-artisan-4.webp`
-```
-PROMPT:
-Showcase de trabajos de clientes Artisan, grid de proyectos completados,
-logos diseñados, websites, animaciones, variedad de industrias, colores
-vibrantes rosa amarillo coral, presentación tipo portfolio, interfaz
-de galería elegante, 8K --ar 16:10 --v 6.1
+FZ Academia live class interface, instructor and student in video call,
+shared music sheet, real-time feedback panel, scheduling sidebar,
+warm amber and orange design, professional e-learning UI, 8K render
+--ar 16:10
 ```
 
 ---
@@ -834,29 +449,23 @@ moderna, expresión innovadora y técnica, 4K vertical
 
 ## CHECKLIST DE ENTREGA
 
-### Portfolio Cards (6)
-- [ ] portfolio-techvision.webp
-- [ ] portfolio-quantum-labs.webp
-- [ ] portfolio-medconnect.webp
-- [ ] portfolio-velocity.webp
-- [ ] portfolio-cryptoflow.webp
-- [ ] portfolio-artisan.webp
+### Portfolio Cards (4)
+- [ ] portfolio-bambu-coliving.png
+- [ ] portfolio-vr-experience.png
+- [ ] portfolio-topra.png
+- [ ] portfolio-fz-academia.png
 
-### Project Heroes (6)
-- [ ] project-hero-techvision.webp
-- [ ] project-hero-quantum-labs.webp
-- [ ] project-hero-medconnect.webp
-- [ ] project-hero-velocity.webp
-- [ ] project-hero-cryptoflow.webp
-- [ ] project-hero-artisan.webp
+### Project Heroes (4)
+- [ ] project-hero-bambu-coliving.png
+- [ ] project-hero-vr-experience.png
+- [ ] project-hero-topra.png
+- [ ] project-hero-fz-academia.png
 
-### Project Galleries (24)
-- [ ] gallery-techvision-1.webp a gallery-techvision-4.webp
-- [ ] gallery-quantum-1.webp a gallery-quantum-4.webp
-- [ ] gallery-medconnect-1.webp a gallery-medconnect-4.webp
-- [ ] gallery-velocity-1.webp a gallery-velocity-4.webp
-- [ ] gallery-cryptoflow-1.webp a gallery-cryptoflow-4.webp
-- [ ] gallery-artisan-1.webp a gallery-artisan-4.webp
+### Project Galleries (16)
+- [ ] gallery-bambu-coliving-1.webp a gallery-bambu-coliving-4.webp
+- [ ] gallery-vr-experience-1.webp a gallery-vr-experience-4.webp
+- [ ] gallery-topra-1.webp a gallery-topra-4.webp
+- [ ] gallery-fz-academia-1.webp a gallery-fz-academia-4.webp
 
 ### Testimonials (5)
 - [ ] avatar-testimonial-1.webp
@@ -871,8 +480,8 @@ moderna, expresión innovadora y técnica, 4K vertical
 
 ---
 
-**Total: 43 imágenes principales**
-*(+ versiones retina @2x = 86 archivos)*
+**Total: 31 imágenes principales**
+*(Portfolio: 4 + Heroes: 4 + Galleries: 16 + Testimonials: 5 + Team: 2)*
 
 ---
 

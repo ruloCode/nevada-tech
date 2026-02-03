@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Link } from '@/app/i18n/navigation';
 import { Project } from '@/app/data/projects-detail';
 
@@ -35,20 +36,27 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         className="group block"
       >
         <div className="relative overflow-hidden rounded-lg aspect-[16/10] mb-4">
-          {/* Gradient Placeholder */}
-          <div
-            className="absolute inset-0 transition-transform duration-500 group-hover:scale-105"
-            style={{ background: project.gradient }}
-          />
-
-          {/* Project Title Overlay */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-white text-2xl md:text-3xl font-light tracking-wide opacity-80">
-              {project.title}
-            </span>
-          </div>
-
-          {/* Hover Overlay */}
+          {project.image ? (
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          ) : (
+            <>
+              <div
+                className="absolute inset-0 transition-transform duration-500 group-hover:scale-105"
+                style={{ background: project.gradient }}
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-white text-2xl md:text-3xl font-light tracking-wide opacity-80">
+                  {project.title}
+                </span>
+              </div>
+            </>
+          )}
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
         </div>
 

@@ -366,9 +366,8 @@
       "label": "Our projects",
       "all": "All",
       "webDesign": "Web Design",
-      "branding": "Branding",
-      "uxui": "UX/UI",
-      "motionDesign": "Motion Design"
+      "motionDesign": "Motion Design",
+      "immersive": "Immersive"
     },
     "detail": {
       "about": "About the project",

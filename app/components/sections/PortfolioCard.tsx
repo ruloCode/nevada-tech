@@ -40,6 +40,7 @@ export default function PortfolioCard({
             src={image}
             alt={title}
             fill
+            loading="eager"
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 640px) 320px, (max-width: 768px) 380px, 420px"
           />

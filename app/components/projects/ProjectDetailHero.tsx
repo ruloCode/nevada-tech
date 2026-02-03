@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/app/i18n/navigation';
 import { Project } from '@/app/data/projects-detail';
@@ -27,11 +28,16 @@ export default function ProjectDetailHero({ project }: ProjectDetailHeroProps) {
               className="absolute inset-0"
               style={{ background: project.gradient }}
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-white text-4xl md:text-5xl font-light tracking-wide opacity-90">
-                {project.title}
-              </span>
-            </div>
+            {project.heroImage && (
+              <Image
+                src={project.heroImage}
+                alt={project.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+              />
+            )}
           </motion.div>
 
           {/* Content */}

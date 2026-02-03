@@ -126,34 +126,6 @@ export default function AboutHero() {
           {t("subtitle")}
         </motion.p>
 
-        {/* Scroll indicator - hidden on mobile */}
-        <motion.div
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 hidden md:block"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 0.6 }}
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-            className="flex flex-col items-center gap-2 text-muted"
-          >
-            <span className="text-xs uppercase tracking-widest">Scroll</span>
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M19 14l-7 7m0 0l-7-7m7 7V3"
-              />
-            </svg>
-          </motion.div>
-        </motion.div>
       </motion.div>
 
       {/* Bottom fade */}

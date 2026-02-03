@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState, useEffect } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Project } from '@/app/data/projects-detail';
 
@@ -13,9 +14,9 @@ export default function ProjectGallery({ project }: ProjectGalleryProps) {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
 
-  // Generate gallery items (3-5 placeholder images based on gradient)
   const galleryItems = Array.from({ length: 4 }, (_, i) => ({
     id: i,
+    image: project.galleryImages?.[i],
     gradient: adjustGradient(project.gradient, i * 20),
     label: `${project.title} - View ${i + 1}`,
   }));
@@ -112,12 +113,22 @@ export default function ProjectGallery({ project }: ProjectGalleryProps) {
             style={{ scrollSnapAlign: 'start' }}
           >
             <div
-              className="aspect-[16/10] rounded-xl overflow-hidden"
+              className="relative aspect-[16/10] rounded-xl overflow-hidden"
               style={{ background: item.gradient }}
             >
-              <div className="w-full h-full flex items-center justify-center">
-                <span className="text-white/60 text-lg">{item.label}</span>
-              </div>
+              {item.image ? (
+                <Image
+                  src={item.image}
+                  alt={item.label}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 80vw, (max-width: 1024px) 60vw, 45vw"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center">
+                  <span className="text-white/60 text-lg">{item.label}</span>
+                </div>
+              )}
             </div>
           </motion.div>
         ))}

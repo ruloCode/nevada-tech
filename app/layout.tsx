@@ -19,8 +19,25 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Nevada Tech - Transform Ideas Into Digital Success",
-  description: "We're your partner in product design, website creation, and branding for every stage of your business.",
+  title: {
+    default: "Nevada Tech - Transform Ideas Into Digital Success",
+    template: "%s | Nevada Tech",
+  },
+  description:
+    "We're your partner in product design, website creation, and branding for every stage of your business.",
+  metadataBase: new URL("https://nevadatech.co"),
+  openGraph: {
+    type: "website",
+    siteName: "Nevada Tech",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  icons: {
+    icon: [{ url: "/favicon.ico" }],
+    apple: [{ url: "/apple-icon.png" }],
+  },
 };
 
 export default function RootLayout({

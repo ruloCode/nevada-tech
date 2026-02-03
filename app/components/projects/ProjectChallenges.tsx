@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Project } from '@/app/data/projects-detail';
@@ -66,26 +67,46 @@ export default function ProjectChallenges({ project }: ProjectChallengesProps) {
           >
             {/* Challenge Image 1 */}
             <div
-              className="aspect-[4/3] rounded-xl overflow-hidden"
+              className="relative aspect-[4/3] rounded-xl overflow-hidden"
               style={{
                 background: adjustGradient(project.gradient, 45),
               }}
             >
-              <div className="w-full h-full flex items-center justify-center">
-                <span className="text-white/60 text-lg">Challenge Visual 1</span>
-              </div>
+              {project.challengeImages?.[0] ? (
+                <Image
+                  src={project.challengeImages[0]}
+                  alt={`${project.title} - Challenge 1`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center">
+                  <span className="text-white/60 text-lg">Challenge Visual 1</span>
+                </div>
+              )}
             </div>
 
             {/* Challenge Image 2 */}
             <div
-              className="aspect-[16/9] rounded-xl overflow-hidden"
+              className="relative aspect-[16/9] rounded-xl overflow-hidden"
               style={{
                 background: adjustGradient(project.gradient, 90),
               }}
             >
-              <div className="w-full h-full flex items-center justify-center">
-                <span className="text-white/60 text-lg">Challenge Visual 2</span>
-              </div>
+              {project.challengeImages?.[1] ? (
+                <Image
+                  src={project.challengeImages[1]}
+                  alt={`${project.title} - Challenge 2`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center">
+                  <span className="text-white/60 text-lg">Challenge Visual 2</span>
+                </div>
+              )}
             </div>
           </motion.div>
         </div>

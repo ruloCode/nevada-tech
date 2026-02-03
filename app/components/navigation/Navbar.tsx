@@ -42,9 +42,10 @@ export default function Navbar() {
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <span className="text-xl font-semibold tracking-tight text-white">
-              Nevada<span className="text-white/60">Tech</span>
+          <Link href="/" className="flex items-center select-none">
+            <span className="text-xl font-bold tracking-tight">
+              <span className="text-white">Nevada</span>
+              <span className="text-[#00E5FF]">Tech</span>
             </span>
           </Link>
 
