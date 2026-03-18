@@ -392,7 +392,13 @@
     "title": "Nevada Tech",
     "subtitle": "Virtual Assistant",
     "error": "Something went wrong. Please try again.",
-    "poweredBy": "Powered by Nevada Tech AI"
+    "poweredBy": "Powered by Nevada Tech AI",
+    "tabChat": "Chat",
+    "tabWhatsApp": "WhatsApp",
+    "whatsappTitle": "Chat on WhatsApp",
+    "whatsappDescription": "Get in touch with us directly through WhatsApp for quick responses and personalized assistance.",
+    "whatsappCta": "Open WhatsApp",
+    "whatsappAvailability": "Available Mon-Fri, 9AM-6PM"
   },
   "Footer": {
     "services": "Services",

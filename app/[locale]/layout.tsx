@@ -3,7 +3,6 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/app/i18n/routing';
 import Navbar from '@/app/components/navigation/Navbar';
-import WhatsAppButton from '@/app/components/ui/WhatsAppButton';
 import ChatWidget from '@/app/components/chat/ChatWidget';
 
 export function generateStaticParams() {
@@ -36,7 +35,6 @@ export default async function LocaleLayout({
     <NextIntlClientProvider messages={messages}>
       <Navbar />
       {children}
-      <WhatsAppButton />
       <ChatWidget />
     </NextIntlClientProvider>
   );
