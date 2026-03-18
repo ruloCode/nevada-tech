@@ -13,11 +13,11 @@ export default function ChatWidget() {
         {isOpen && <ChatWindow onClose={() => setIsOpen(false)} />}
       </AnimatePresence>
 
-      {/* Floating button — hidden on mobile when chat is open (fullscreen) */}
+      {/* Floating button — hidden when chat is open */}
       <motion.button
         onClick={() => setIsOpen((prev) => !prev)}
         className={`fixed bottom-6 right-4 sm:right-6 z-50 w-14 h-14 rounded-full bg-white text-black flex items-center justify-center shadow-lg shadow-white/10 ${
-          isOpen ? 'hidden sm:flex' : ''
+          isOpen ? 'hidden' : ''
         }`}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
