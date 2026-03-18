@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/app/i18n/routing';
 import Navbar from '@/app/components/navigation/Navbar';
 import WhatsAppButton from '@/app/components/ui/WhatsAppButton';
+import ChatWidget from '@/app/components/chat/ChatWidget';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -36,6 +37,7 @@ export default async function LocaleLayout({
       <Navbar />
       {children}
       <WhatsAppButton />
+      <ChatWidget />
     </NextIntlClientProvider>
   );
 }

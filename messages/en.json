@@ -385,6 +385,15 @@
       "letsChat": "Let's chat"
     }
   },
+  "Chat": {
+    "greeting": "Hi! I'm Nevada Tech's virtual assistant. Ask me anything about our services, process, or team!",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "title": "Nevada Tech",
+    "subtitle": "Virtual Assistant",
+    "error": "Something went wrong. Please try again.",
+    "poweredBy": "Powered by Nevada Tech AI"
+  },
   "Footer": {
     "services": "Services",
     "projects": "Projects",
