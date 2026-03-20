@@ -21,6 +21,7 @@ export default function Navbar() {
     { label: t("about"), href: "/about" },
     { label: t("services"), href: "/#services" },
     { label: t("projects"), href: "/#projects" },
+    { label: t("contact"), href: "/contact" },
   ];
 
   useEffect(() => {
@@ -73,7 +74,7 @@ export default function Navbar() {
           {/* Desktop CTA + Language Switcher */}
           <div className="hidden lg:flex items-center gap-4">
             <LanguageSwitcher />
-            <Button variant="outline" href="#contact">
+            <Button variant="outline" href="/contact">
               {t("contact")}
             </Button>
           </div>
@@ -141,7 +142,7 @@ export default function Navbar() {
               >
                 <Button
                   variant="outline"
-                  href="#contact"
+                  href="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {t("contact")}

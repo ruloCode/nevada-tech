@@ -400,6 +400,54 @@
     "whatsappCta": "Open WhatsApp",
     "whatsappAvailability": "Available Mon-Fri, 9AM-6PM"
   },
+  "Contact": {
+    "hero": {
+      "label": "Get in Touch",
+      "title": "Let's Build Something",
+      "titleAccent": "Great Together",
+      "subtitle": "Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you as soon as possible."
+    },
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone Number (optional)",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "service": "Service Type",
+      "servicePlaceholder": "Select a service",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send Message",
+      "services": {
+        "web-development": "Web Development",
+        "mobile-apps": "Mobile Apps",
+        "cloud-solutions": "Cloud Solutions",
+        "ai-ml": "AI / ML",
+        "ui-ux-design": "UI/UX Design",
+        "devops": "DevOps",
+        "tech-consulting": "Tech Consulting",
+        "e-commerce": "E-commerce"
+      }
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "serviceRequired": "Please select a service",
+      "messageRequired": "Message is required",
+      "messageTooShort": "Message must be at least 10 characters"
+    },
+    "success": {
+      "title": "Message Sent!",
+      "subtitle": "Thank you for reaching out. We'll get back to you within 24 hours.",
+      "button": "Send Another Message"
+    },
+    "meta": {
+      "title": "Contact Us",
+      "description": "Get in touch with Nevada Tech. Tell us about your project and we'll help you transform your ideas into digital success."
+    }
+  },
   "Footer": {
     "services": "Services",
     "projects": "Projects",

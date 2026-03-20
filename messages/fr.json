@@ -385,6 +385,54 @@
       "letsChat": "Discutons"
     }
   },
+  "Contact": {
+    "hero": {
+      "label": "Prenez Contact",
+      "title": "Construisons Quelque Chose",
+      "titleAccent": "d'Extraordinaire Ensemble",
+      "subtitle": "Vous avez un projet en tête ? Nous adorerions en entendre parler. Envoyez-nous un message et nous vous répondrons dès que possible."
+    },
+    "form": {
+      "name": "Nom Complet",
+      "namePlaceholder": "Jean Dupont",
+      "email": "Adresse Email",
+      "emailPlaceholder": "jean@exemple.com",
+      "phone": "Téléphone (optionnel)",
+      "phonePlaceholder": "+33 1 00 00 00 00",
+      "service": "Type de Service",
+      "servicePlaceholder": "Sélectionnez un service",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "submit": "Envoyer le Message",
+      "services": {
+        "web-development": "Développement Web",
+        "mobile-apps": "Applications Mobiles",
+        "cloud-solutions": "Solutions Cloud",
+        "ai-ml": "IA / ML",
+        "ui-ux-design": "Design UI/UX",
+        "devops": "DevOps",
+        "tech-consulting": "Conseil Technologique",
+        "e-commerce": "E-commerce"
+      }
+    },
+    "validation": {
+      "nameRequired": "Le nom est requis",
+      "emailRequired": "L'email est requis",
+      "emailInvalid": "Veuillez entrer une adresse email valide",
+      "serviceRequired": "Veuillez sélectionner un service",
+      "messageRequired": "Le message est requis",
+      "messageTooShort": "Le message doit contenir au moins 10 caractères"
+    },
+    "success": {
+      "title": "Message Envoyé !",
+      "subtitle": "Merci de nous avoir contacté. Nous vous répondrons dans les 24 heures.",
+      "button": "Envoyer un Autre Message"
+    },
+    "meta": {
+      "title": "Contactez-nous",
+      "description": "Contactez Nevada Tech. Parlez-nous de votre projet et nous vous aiderons à transformer vos idées en succès numérique."
+    }
+  },
   "Footer": {
     "services": "Services",
     "projects": "Projets",

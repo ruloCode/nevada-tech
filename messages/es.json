@@ -400,6 +400,54 @@
     "whatsappCta": "Abrir WhatsApp",
     "whatsappAvailability": "Disponible Lun-Vie, 9AM-6PM"
   },
+  "Contact": {
+    "hero": {
+      "label": "Contáctanos",
+      "title": "Construyamos Algo",
+      "titleAccent": "Increíble Juntos",
+      "subtitle": "¿Tienes un proyecto en mente? Nos encantaría escucharlo. Envíanos un mensaje y te responderemos a la brevedad."
+    },
+    "form": {
+      "name": "Nombre Completo",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "juan@ejemplo.com",
+      "phone": "Teléfono (opcional)",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "service": "Tipo de Servicio",
+      "servicePlaceholder": "Selecciona un servicio",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
+      "submit": "Enviar Mensaje",
+      "services": {
+        "web-development": "Desarrollo Web",
+        "mobile-apps": "Apps Móviles",
+        "cloud-solutions": "Soluciones Cloud",
+        "ai-ml": "IA / ML",
+        "ui-ux-design": "Diseño UI/UX",
+        "devops": "DevOps",
+        "tech-consulting": "Consultoría Tecnológica",
+        "e-commerce": "E-commerce"
+      }
+    },
+    "validation": {
+      "nameRequired": "El nombre es requerido",
+      "emailRequired": "El correo es requerido",
+      "emailInvalid": "Por favor ingresa un correo electrónico válido",
+      "serviceRequired": "Por favor selecciona un servicio",
+      "messageRequired": "El mensaje es requerido",
+      "messageTooShort": "El mensaje debe tener al menos 10 caracteres"
+    },
+    "success": {
+      "title": "¡Mensaje Enviado!",
+      "subtitle": "Gracias por contactarnos. Te responderemos en menos de 24 horas.",
+      "button": "Enviar Otro Mensaje"
+    },
+    "meta": {
+      "title": "Contáctanos",
+      "description": "Ponte en contacto con Nevada Tech. Cuéntanos sobre tu proyecto y te ayudaremos a convertir tus ideas en éxito digital."
+    }
+  },
   "Footer": {
     "services": "Servicios",
     "projects": "Proyectos",
